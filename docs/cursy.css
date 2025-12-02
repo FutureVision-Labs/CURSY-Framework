@@ -640,6 +640,22 @@ footer .grid > div {
   padding: 0 var(--spacing-md);
 }
 
+/* Ensure footer lists don't have bullets and proper spacing */
+footer ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 0;
+}
+
+footer ul li::before {
+  display: none;
+}
+
 /* ============================================
    FORMS
    ============================================ */
