@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CURSY Framework v0.420a – *The Bulma/Tailwind Killer* 🚗💖✨</title>
+  <meta name="description" content="A hand-crafted, synthwave/cyberpunk CSS framework with 30+ components and 200+ utility classes. Built for projects that need personality!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="cursy.css" />
+  <link rel="stylesheet" href="cursy-utilities.css" />
+  <link rel="stylesheet" href="cursy-components.css" />
+  <style>
+    .hero-glow {
+      position: absolute;
+      inset: -30%;
+      border-radius: 999px;
+      background: conic-gradient(from 180deg, rgba(34, 197, 94, 0.15), transparent 30%, rgba(34, 211, 238, 0.2), transparent 60%, rgba(168, 85, 247, 0.15), transparent 90%, rgba(249, 115, 22, 0.1));
+      filter: blur(40px);
+      opacity: 0.8;
+      z-index: -1;
+      animation: orbitGlow 20s linear infinite;
+    }
+    .emoji-large {
+      font-size: 4rem;
+      line-height: 1;
+      font-style: italic;
+      display: inline-block;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .stat-card {
+      text-align: center;
+      padding: 2rem;
+      background: radial-gradient(circle at top, rgba(15, 23, 42, 0.9), rgba(2, 6, 23, 0.98));
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 1rem;
+    }
+    .stat-number {
+      font-family: var(--font-orbitron);
+      font-size: 3rem;
+      color: var(--cursy-cyan);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .stat-label {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--cursy-slate-400);
+    }
+    .code-preview {
+      background: var(--cursy-slate-900);
+      border: 1px solid rgba(30, 64, 175, 0.7);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      overflow-x: auto;
+    }
+    .code-preview code {
+      color: var(--cursy-cyan);
+      font-family: 'Courier New', monospace;
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+    }
+    .comparison-table th {
+      background: rgba(15, 23, 42, 0.98);
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 2px solid rgba(56, 189, 248, 0.5);
+    }
+    .comparison-table td {
+      padding: 1rem;
+      border-bottom: 1px solid rgba(30, 64, 175, 0.3);
+    }
+    .comparison-table tr:hover {
+      background: rgba(34, 197, 94, 0.05);
+    }
+    .cta-big {
+      background: radial-gradient(circle at center, rgba(15, 23, 42, 0.95), rgba(2, 6, 23, 0.98));
+      border: 2px solid rgba(34, 211, 238, 0.5);
+      border-radius: 1.5rem;
+      padding: 4rem 2rem;
+      text-align: center;
+      margin: 4rem 0;
+      box-shadow: 0 0 50px rgba(34, 211, 238, 0.3);
+    }
+  </style>
+</head>
+<body class="scanlines">
+  <div class="page">
+    <header>
+      <div class="nav-inner">
+        <div class="brand">
+          <div class="brand-mark">
+            <span>CF</span>
+          </div>
+          <div class="brand-text">
+            <div class="brand-title">CURSY Framework</div>
+            <div class="brand-sub">v0.420a *Synthwave CSS*</div>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#features">*Features*</a></li>
+            <li><a href="#components">*Components*</a></li>
+            <li><a href="#utilities">*Utilities*</a></li>
+            <li><a href="#docs">*Docs*</a></li>
+            <li><a href="https://github.com" class="btn-primary">*GitHub* 🐙</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="top">
+        <div class="hero-glow"></div>
+        <div class="hero-copy" style="position: relative; z-index: 2;">
+          <h1>
+            <span>*FutureVision Labs · Team DC*</span>
+            CURSY Framework<br />
+            <small style="font-size:0.6rem;letter-spacing:0.24em;text-transform:uppercase;color:#60a5fa;">
+              *v0.420a · The Bulma/Tailwind Killer · Hand-Crafted Synthwave CSS* 💪✨
+            </small>
+          </h1>
+          <p class="lede">
+            *The CSS framework that breaks the mold.* 💫 Built with *love* 💖, *craft* 🎨, and *zero AI templates* 🚫. 
+            *30+ components* 🛠️, *200+ utility classes* ⚡, *unique synthwave aesthetic* 🌃. 
+            *For projects that need personality, not cookie-cutter designs.* ✨
+          </p>
+
+          <div class="hero-badges">
+            <div class="badge">*30+ Components* 🛠️</div>
+            <div class="badge">*200+ Utilities* ⚡</div>
+            <div class="badge">*Zero JS* 🚫</div>
+            <div class="badge">*Hand-Crafted* ✋</div>
+            <div class="badge">*v0.420a* 🚗</div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#download" class="btn-primary">
+              <span>*Download Now* ⬇️</span>
+            </a>
+            <a href="#components" class="btn-ghost">*View Components* 👀</a>
+            <a href="https://github.com" class="btn-ghost">*GitHub* 🐙</a>
+          </div>
+
+          <div class="hero-meta">
+            *Built for Mini-Cursy · Part of The Imaginatorium · Free for FutureVision projects* 🚗💖✨
+          </div>
+        </div>
+
+        <div class="hero-car" aria-hidden="true" style="position: relative; z-index: 2;">
+          <div class="car-orbit"></div>
+          <div class="card">
+            <div style="padding: 2rem; text-align: center;">
+              <div class="emoji-large">🚗💖✨</div>
+              <h3 style="margin-top: 1rem; margin-bottom: 0.5rem;">*CURSY Framework*</h3>
+              <p style="font-size: 0.75rem; color: var(--cursy-slate-400); margin-bottom: 1rem;">
+                *The Bulma/Tailwind Killer*
+              </p>
+              <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
+                <span class="badge">*MIT*</span>
+                <span class="badge">*v0.420a*</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section>
+        <div class="feature-grid">
+          <div class="stat-card">
+            <span class="stat-number">30+</span>
+            <div class="stat-label">*Components*</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">200+</span>
+            <div class="stat-label">*Utility Classes*</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">1900+</span>
+            <div class="stat-label">*Lines of CSS*</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">0</span>
+            <div class="stat-label">*Purple Gradients* 😎</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">100%</span>
+            <div class="stat-label">*Hand-Crafted*</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">∞</span>
+            <div class="stat-label">*Synthwave Vibes*</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUICK START -->
+      <section id="download">
+        <div class="section-label">00 · *Quick Start*</div>
+        <h2 class="section-title">*Get Started in 60 Seconds* ⏱️</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>*1. Include CSS* 📦</h3>
+            <div class="code-preview">
+<code>&lt;link rel="stylesheet" href="cursy.css"&gt;
+&lt;link rel="stylesheet" href="cursy-utilities.css"&gt;
+&lt;link rel="stylesheet" href="cursy-components.css"&gt;</code>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--cursy-slate-400);">
+              *Or use* <code class="inline-code">cursy-full.css</code> *for everything!*
+            </p>
+          </div>
+          <div class="card">
+            <h3>*2. Add Fonts* 🔤</h3>
+            <div class="code-preview">
+<code>&lt;link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" /&gt;</code>
+            </div>
+          </div>
+          <div class="card">
+            <h3>*3. Add Scanlines* 📺</h3>
+            <div class="code-preview">
+<code>&lt;body class="scanlines"&gt;</code>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--cursy-slate-400);">
+              *Optional but recommended for that retro vibe!*
+            </p>
+          </div>
+        </div>
+        <div class="cta-big">
+          <div class="emoji-large" style="font-size: 5rem; margin-bottom: 1rem;">🚀</div>
+          <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">*Ready to Build?*</h2>
+          <p style="font-size: 1.1rem; color: var(--cursy-slate-300); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+            *Download CURSY Framework v0.420a and start building beautiful synthwave interfaces today!* 💫
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="cursy.css" download="cursy.css" class="btn-primary" style="font-size: 1rem; padding: 0.75rem 2rem;">
+              *Download CSS* ⬇️
+            </a>
+            <a href="#components" class="btn-ghost" style="font-size: 1rem; padding: 0.75rem 2rem;">
+              *View Components* 👀
+            </a>
+            <a href="COMPONENTS.md" class="btn-ghost" style="font-size: 1rem; padding: 0.75rem 2rem;">
+              *Read Docs* 📚
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section id="features">
+        <div class="section-label">01 · *Why CURSY?*</div>
+        <h2 class="section-title">*Built Different* 💫</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <span style="font-size: 3rem; margin-bottom: 1rem; display: block;">🎨</span>
+            <h3>*Unique Palette*</h3>
+            <p>
+              *Green-cyan-purple-orange* 🌈 accents on deep slate backgrounds. 
+              *Not another generic purple gradient* that everyone's using. *Stand out* ✨
+            </p>
+          </div>
+          <div class="card">
+            <span style="font-size: 3rem; margin-bottom: 1rem; display: block;">✋</span>
+            <h3>*Hand-Crafted*</h3>
+            <p>
+              *Every line written by hand* 💖, *every animation tuned* 🎯, *every color chosen* 🎨. 
+              *No AI templates, no cookie-cutter designs* 🚫
+            </p>
+          </div>
+          <div class="card">
+            <span style="font-size: 3rem; margin-bottom: 1rem; display: block;">🌃</span>
+            <h3>*Synthwave Vibes*</h3>
+            <p>
+              *Retro-futuristic aesthetics* 🚀 with *scanlines* 📺, *orbit glows* 💫, 
+              and *light sweeps* ✨. *Perfect for cyberpunk projects* 🌆
+            </p>
+          </div>
+          <div class="card">
+            <span style="font-size: 3rem; margin-bottom: 1rem; display: block;">⚡</span>
+            <h3>*Lightweight*</h3>
+            <p>
+              *Just CSS* 📦. *No JavaScript required* 🚫. *No build step* ⚙️. 
+              *Drop it in and go* 🚀
+            </p>
+          </div>
+          <div class="card">
+            <span style="font-size: 3rem; margin-bottom: 1rem; display: block;">🎯</span>
+            <h3>*Utility-First*</h3>
+            <p>
+              *Inspired by Tailwind* 💨, but *custom-built* 🔨. *200+ utility classes* 🛠️ 
+              for *rapid development* ⚡
+            </p>
+          </div>
+          <div class="card">
+            <span style="font-size: 3rem; margin-bottom: 1rem; display: block;">💖</span>
+            <h3>*Built with Love*</h3>
+            <p>
+              *Created for Mini-Cursy* 🚗, *refined for The Imaginatorium* 🏛️, 
+              *shared with the world* 🌍
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPONENTS PREVIEW -->
+      <section id="components">
+        <div class="section-label">02 · *Components*</div>
+        <h2 class="section-title">*30+ Components Ready to Use* 🛠️</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>*Buttons* 🔘</h3>
+            <p>*Primary and ghost variants* with *smooth hover effects* ✨</p>
+            <div style="margin-top: 1rem;">
+              <a href="#" class="btn-primary">*Primary*</a>
+              <a href="#" class="btn-ghost" style="margin-left: 0.5rem;">*Ghost*</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3>*Cards* 🃏</h3>
+            <p>*Beautiful cards* with *hover glows* 💫 and *subtle shadows* 🌑</p>
+          </div>
+          <div class="card">
+            <h3>*Forms* 📝</h3>
+            <p>*Inputs, selects, checkboxes, file uploads, ranges, switches*</p>
+            <div style="margin-top: 1rem;">
+              <input type="text" class="form-input" placeholder="*Type here*" style="width: 100%;" />
+            </div>
+          </div>
+          <div class="card">
+            <h3>*Alerts* ⚠️</h3>
+            <div class="alert alert-success" style="margin-top: 1rem;">*Success!* ✅</div>
+            <div class="alert alert-info">*Info* ℹ️</div>
+          </div>
+          <div class="card">
+            <h3>*Tabs* 📑</h3>
+            <div class="tabs" style="margin-top: 1rem;">
+              <button class="tab active">*Tab 1*</button>
+              <button class="tab">*Tab 2*</button>
+              <button class="tab">*Tab 3*</button>
+            </div>
+          </div>
+          <div class="card">
+            <h3>*Progress* 📊</h3>
+            <div class="progress" style="margin-top: 1rem;">
+              <div class="progress-bar" style="width: 75%;"></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>*Spinner* ⏳</h3>
+            <div style="margin-top: 1rem; display: flex; justify-content: center;">
+              <div class="spinner"></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>*Breadcrumbs* 🍞</h3>
+            <div class="breadcrumbs" style="margin-top: 1rem;">
+              <div class="breadcrumb-item"><a href="#">*Home*</a></div>
+              <span class="breadcrumb-separator">/</span>
+              <div class="breadcrumb-item active">*Page*</div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>*Pagination* 📄</h3>
+            <div class="pagination" style="margin-top: 1rem;">
+              <a href="#" class="pagination-link">*Prev*</a>
+              <a href="#" class="pagination-link active">*1*</a>
+              <a href="#" class="pagination-link">*2*</a>
+              <a href="#" class="pagination-link">*Next*</a>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="COMPONENTS.md" class="btn-primary">*View All Components* 📚</a>
+        </div>
+      </section>
+
+      <!-- UTILITIES -->
+      <section id="utilities">
+        <div class="section-label">03 · *Utilities*</div>
+        <h2 class="section-title">*200+ Utility Classes* ⚡</h2>
+        <div class="card">
+          <h3>*Spacing* 📏</h3>
+          <div class="code-preview">
+<code>&lt;div class="m-4 p-6"&gt;*Margin and padding*&lt;/div&gt;
+&lt;div class="mt-8 mb-4"&gt;*Top/bottom margin*&lt;/div&gt;
+&lt;div class="px-4 py-2"&gt;*Horizontal/vertical padding*&lt;/div&gt;</code>
+          </div>
+        </div>
+        <div class="card">
+          <h3>*Colors* 🌈</h3>
+          <div class="code-preview">
+<code>&lt;div class="text-cyan bg-slate-900 border-green"&gt;
+  *Colored text, background, and border*
+&lt;/div&gt;</code>
+          </div>
+        </div>
+        <div class="card">
+          <h3>*Layout* 📐</h3>
+          <div class="code-preview">
+<code>&lt;div class="flex items-center justify-between"&gt;
+  &lt;div class="w-1/2"&gt;*Half width*&lt;/div&gt;
+  &lt;div class="w-1/2"&gt;*Half width*&lt;/div&gt;
+&lt;/div&gt;</code>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="FEATURES.md" class="btn-primary">*View All Utilities* 📖</a>
+        </div>
+      </section>
+
+      <!-- COMPARISON -->
+      <section>
+        <div class="section-label">04 · *Comparison*</div>
+        <h2 class="section-title">*vs Tailwind & Bulma* 💪</h2>
+        <div class="table-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>*Feature*</th>
+                <th>*CURSY*</th>
+                <th>*Tailwind*</th>
+                <th>*Bulma*</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>*Utility Classes*</td>
+                <td>✅ *200+*</td>
+                <td>✅ *1000+*</td>
+                <td>❌ *Limited*</td>
+              </tr>
+              <tr>
+                <td>*Components*</td>
+                <td>✅ *30+*</td>
+                <td>⚠️ *Needs plugins*</td>
+                <td>✅ *40+*</td>
+              </tr>
+              <tr>
+                <td>*Unique Design*</td>
+                <td>✅ *Synthwave*</td>
+                <td>❌ *Generic*</td>
+                <td>⚠️ *Material*</td>
+              </tr>
+              <tr>
+                <td>*Hand-Crafted*</td>
+                <td>✅ *Yes*</td>
+                <td>❌ *Generated*</td>
+                <td>✅ *Yes*</td>
+              </tr>
+              <tr>
+                <td>*Animations*</td>
+                <td>✅ *Custom*</td>
+                <td>⚠️ *Basic*</td>
+                <td>⚠️ *Basic*</td>
+              </tr>
+              <tr>
+                <td>*Zero JS*</td>
+                <td>✅ *Yes*</td>
+                <td>✅ *Yes*</td>
+                <td>✅ *Yes*</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- FOOTER CTA -->
+      <section>
+        <div class="card" style="text-align: center; padding: 2.5rem;">
+          <h3 style="margin-bottom: 1rem;">*Part of The Imaginatorium* 🏛️</h3>
+          <p style="color: var(--cursy-slate-400); margin-bottom: 1.5rem;">
+            *CURSY Framework is part of the Imaginatorium ecosystem* — *where every design decision becomes canon* 📜
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <span class="badge">*Mini-Cursy* 🚗</span>
+            <span class="badge">*VIBE-CHAT* 💬</span>
+            <span class="badge">*VIBE-IDE* 💻</span>
+            <span class="badge">*The Technomancer* 📖</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      *CURSY Framework v0.420a* · *A FutureVision Labs / Team DC project* · *Built with love for the Imaginatorium* 🚗💖✨
+      <br />
+      <span style="font-size: 0.65rem; color: var(--cursy-slate-600); margin-top: 0.5rem; display: block;">
+        *MIT License* · *Free for FutureVision projects* · *GitHub Pages Ready* 🚀
+      </span>
+    </footer>
+  </div>
+</body>
+</html>
+

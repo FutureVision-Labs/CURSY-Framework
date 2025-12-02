@@ -1,0 +1,30 @@
+# CURSY Framework .gitignore
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (if we add npm later)
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.log
+.cache/
+
+# Keep docs folder (for GitHub Pages)
+!docs/
+

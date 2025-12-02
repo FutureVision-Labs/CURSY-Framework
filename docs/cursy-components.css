@@ -1,0 +1,612 @@
+/**
+ * CURSY FRAMEWORK v0.420a - ADDITIONAL COMPONENTS 🚗💖✨
+ * More components to make CURSY a Bulma/Tailwind killer!
+ * 
+ * *Tabs, breadcrumbs, pagination, dropdowns, tooltips, and more* 💫
+ */
+
+/* ============================================
+   TABS
+   ============================================ */
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid rgba(30, 64, 175, 0.7);
+  margin-bottom: var(--spacing-lg);
+  overflow-x: auto;
+}
+
+.tab {
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--cursy-slate-400);
+  font-family: var(--font-orbitron);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  color: var(--cursy-slate-200);
+}
+
+.tab.active {
+  color: var(--cursy-cyan);
+  border-bottom-color: var(--cursy-cyan);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* ============================================
+   BREADCRUMBS
+   ============================================ */
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: var(--cursy-slate-400);
+  margin-bottom: var(--spacing-lg);
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.breadcrumb-item a {
+  color: var(--cursy-cyan);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-item a:hover {
+  color: #a5f3fc;
+}
+
+.breadcrumb-separator {
+  color: var(--cursy-slate-500);
+}
+
+.breadcrumb-item.active {
+  color: var(--cursy-slate-300);
+}
+
+/* ============================================
+   PAGINATION
+   ============================================ */
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pagination-link {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(30, 64, 175, 0.5);
+  color: var(--cursy-slate-300);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  min-width: 2.5rem;
+  text-align: center;
+}
+
+.pagination-link:hover {
+  border-color: var(--cursy-cyan);
+  color: var(--cursy-cyan);
+  background: rgba(34, 211, 238, 0.1);
+}
+
+.pagination-link.active {
+  background: linear-gradient(135deg, var(--cursy-green), var(--cursy-cyan));
+  border-color: var(--cursy-cyan);
+  color: var(--cursy-slate-900);
+  font-weight: 600;
+}
+
+.pagination-link.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ============================================
+   DROPDOWNS
+   ============================================ */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-trigger {
+  padding: 0.5rem 1rem;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(30, 64, 175, 0.5);
+  border-radius: 0.5rem;
+  color: var(--cursy-slate-200);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.dropdown-trigger:hover {
+  border-color: var(--cursy-cyan);
+  background: rgba(34, 211, 238, 0.1);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.5rem;
+  background: radial-gradient(circle at top, rgba(15, 23, 42, 0.98), rgba(2, 6, 23, 0.98));
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+  min-width: 200px;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.95);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: all 0.2s ease;
+  z-index: 50;
+}
+
+.dropdown.active .dropdown-menu {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--cursy-slate-300);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.dropdown-item:hover {
+  background: rgba(34, 197, 94, 0.1);
+  color: var(--cursy-slate-200);
+}
+
+.dropdown-divider {
+  height: 1px;
+  background: rgba(30, 64, 175, 0.5);
+  margin: 0.5rem 0;
+}
+
+/* ============================================
+   TOOLTIPS
+   ============================================ */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--cursy-slate-900);
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  border-radius: 0.5rem;
+  color: var(--cursy-slate-200);
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 100;
+}
+
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: rgba(56, 189, 248, 0.5);
+}
+
+.tooltip:hover .tooltip-text {
+  opacity: 1;
+}
+
+.tooltip-top .tooltip-text {
+  bottom: auto;
+  top: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.tooltip-top .tooltip-text::after {
+  top: auto;
+  bottom: 100%;
+  border-top-color: transparent;
+  border-bottom-color: rgba(56, 189, 248, 0.5);
+}
+
+/* ============================================
+   PROGRESS BARS
+   ============================================ */
+
+.progress {
+  width: 100%;
+  height: 0.5rem;
+  background: rgba(15, 23, 42, 0.8);
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid rgba(30, 64, 175, 0.5);
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--cursy-green), var(--cursy-cyan));
+  border-radius: 999px;
+  transition: width 0.3s ease;
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
+}
+
+.progress-bar-success {
+  background: linear-gradient(90deg, var(--cursy-green), #16a34a);
+}
+
+.progress-bar-warning {
+  background: linear-gradient(90deg, var(--cursy-orange), #ea580c);
+}
+
+.progress-bar-error {
+  background: linear-gradient(90deg, #ef4444, #dc2626);
+}
+
+/* ============================================
+   LOADING SPINNERS
+   ============================================ */
+
+.spinner {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid rgba(34, 211, 238, 0.2);
+  border-top-color: var(--cursy-cyan);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.spinner-sm {
+  width: 1rem;
+  height: 1rem;
+  border-width: 2px;
+}
+
+.spinner-lg {
+  width: 3rem;
+  height: 3rem;
+  border-width: 4px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* ============================================
+   ACCORDION / COLLAPSIBLE
+   ============================================ */
+
+.accordion {
+  border: 1px solid rgba(30, 64, 175, 0.7);
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-bottom: 1px solid rgba(30, 64, 175, 0.5);
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-header {
+  padding: 1rem 1.25rem;
+  background: rgba(15, 23, 42, 0.6);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+.accordion-header:hover {
+  background: rgba(15, 23, 42, 0.8);
+}
+
+.accordion-title {
+  font-family: var(--font-orbitron);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--cursy-slate-200);
+}
+
+.accordion-icon {
+  color: var(--cursy-cyan);
+  transition: transform 0.2s ease;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-body {
+  padding: 1rem 1.25rem;
+  color: var(--cursy-slate-300);
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 1000px;
+}
+
+/* ============================================
+   MORE FORM COMPONENTS
+   ============================================ */
+
+/* File Upload */
+.form-file {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.form-file-input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.form-file-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px dashed rgba(56, 189, 248, 0.5);
+  border-radius: 0.5rem;
+  color: var(--cursy-slate-300);
+  transition: all 0.2s ease;
+}
+
+.form-file:hover .form-file-label {
+  border-color: var(--cursy-cyan);
+  background: rgba(34, 211, 238, 0.1);
+}
+
+/* Range Slider */
+.form-range {
+  width: 100%;
+  height: 0.5rem;
+  background: rgba(15, 23, 42, 0.8);
+  border-radius: 999px;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.form-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: linear-gradient(135deg, var(--cursy-green), var(--cursy-cyan));
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
+}
+
+.form-range::-moz-range-thumb {
+  width: 1.25rem;
+  height: 1.25rem;
+  background: linear-gradient(135deg, var(--cursy-green), var(--cursy-cyan));
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
+}
+
+/* Switch/Toggle */
+.form-switch {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 1.5rem;
+}
+
+.form-switch-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.form-switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(30, 64, 175, 0.5);
+  transition: 0.3s;
+  border-radius: 1.5rem;
+}
+
+.form-switch-slider:before {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  left: 0.25rem;
+  bottom: 0.2rem;
+  background-color: var(--cursy-slate-400);
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.form-switch-input:checked + .form-switch-slider {
+  background: linear-gradient(135deg, var(--cursy-green), var(--cursy-cyan));
+  border-color: var(--cursy-cyan);
+}
+
+.form-switch-input:checked + .form-switch-slider:before {
+  transform: translateX(1.5rem);
+  background-color: var(--cursy-slate-900);
+}
+
+/* ============================================
+   CONTAINERS & LAYOUT
+   ============================================ */
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-lg);
+  padding-right: var(--spacing-lg);
+}
+
+.container-sm {
+  max-width: 640px;
+}
+
+.container-md {
+  max-width: 768px;
+}
+
+.container-lg {
+  max-width: 1024px;
+}
+
+.container-xl {
+  max-width: 1280px;
+}
+
+.container-2xl {
+  max-width: 1536px;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+.column {
+  flex: 1;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.column.is-1 { flex: 0 0 8.333333%; }
+.column.is-2 { flex: 0 0 16.666667%; }
+.column.is-3 { flex: 0 0 25%; }
+.column.is-4 { flex: 0 0 33.333333%; }
+.column.is-5 { flex: 0 0 41.666667%; }
+.column.is-6 { flex: 0 0 50%; }
+.column.is-7 { flex: 0 0 58.333333%; }
+.column.is-8 { flex: 0 0 66.666667%; }
+.column.is-9 { flex: 0 0 75%; }
+.column.is-10 { flex: 0 0 83.333333%; }
+.column.is-11 { flex: 0 0 91.666667%; }
+.column.is-12 { flex: 0 0 100%; }
+
+/* ============================================
+   MEDIA OBJECTS
+   ============================================ */
+
+.media {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+}
+
+.media-left {
+  flex-shrink: 0;
+}
+
+.media-content {
+  flex: 1;
+}
+
+.media-right {
+  flex-shrink: 0;
+}
+
+/* ============================================
+   LEVEL (Horizontal layout)
+   ============================================ */
+
+.level {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.level-left,
+.level-right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.level-item {
+  display: flex;
+  align-items: center;
+}
+

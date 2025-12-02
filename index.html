@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CURSY Framework – Demo & Showcase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="cursy.css" />
+</head>
+<body class="scanlines">
+  <div class="page">
+    <header>
+      <div class="nav-inner">
+        <div class="brand">
+          <div class="brand-mark">
+            <span>CF</span>
+          </div>
+          <div class="brand-text">
+            <div class="brand-title">CURSY Framework</div>
+            <div class="brand-sub">Synthwave CSS Framework</div>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#components">Components</a></li>
+            <li><a href="#colors">Colors</a></li>
+            <li><a href="#animations">Animations</a></li>
+            <li><a href="#docs">Docs</a></li>
+            <li><a href="https://github.com" class="btn-primary">Get Started ▸</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <h1>
+            <span>FutureVision Labs · Team DC</span>
+            CURSY Framework<br />
+            <small style="font-size:0.6rem;letter-spacing:0.24em;text-transform:uppercase;color:#60a5fa;">HAND‑CRAFTED SYNTHWAVE CSS · NOT ANOTHER PURPLE GRADIENT</small>
+          </h1>
+          <p class="lede">
+            A carefully crafted CSS framework with unique green-cyan-purple-orange accents, 
+            hand-tuned animations, and synthwave aesthetics. Built for projects that need 
+            personality, not templates.
+          </p>
+
+          <div class="hero-badges">
+            <div class="badge">No Purple Gradients</div>
+            <div class="badge">Hand-Crafted</div>
+            <div class="badge">Utility-First</div>
+            <div class="badge">Synthwave Vibes</div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#components" class="btn-primary">
+              <span>View Components</span>
+            </a>
+            <a href="#docs" class="btn-ghost">Read Docs</a>
+          </div>
+
+          <div class="hero-meta">
+            v1.0.0 · Built for Mini-Cursy · Part of The Imaginatorium
+          </div>
+        </div>
+
+        <div class="hero-car" aria-hidden="true">
+          <div class="car-orbit"></div>
+          <div class="card">
+            <div style="padding: 2rem; text-align: center;">
+              <div style="font-size: 4rem; margin-bottom: 1rem;">🚗💖✨</div>
+              <h3 style="margin-bottom: 0.5rem;">CURSY Framework</h3>
+              <p style="font-size: 0.75rem; color: var(--cursy-slate-400);">
+                Hand-crafted CSS for synthwave projects
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BUTTONS -->
+      <section id="components">
+        <div class="section-label">01 · Components</div>
+        <h2 class="section-title">Buttons</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>Primary Button</h3>
+            <p>Main call-to-action with green-cyan gradient</p>
+            <div style="margin-top: 1rem;">
+              <a href="#" class="btn-primary">Get Started</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Ghost Button</h3>
+            <p>Subtle secondary action</p>
+            <div style="margin-top: 1rem;">
+              <a href="#" class="btn-ghost">Learn More</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Button States</h3>
+            <p>Hover effects included</p>
+            <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <a href="#" class="btn-primary">Hover Me</a>
+              <a href="#" class="btn-ghost">Hover Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARDS -->
+      <section>
+        <div class="section-label">02 · Components</div>
+        <h2 class="section-title">Cards</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>Standard Card</h3>
+            <p>
+              Cards have a subtle hover effect with a green radial gradient overlay. 
+              Perfect for feature showcases, content blocks, and component demos.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Card with Badge</h3>
+            <p>
+              Combine cards with badges for tags and labels. 
+              <span class="badge" style="margin-top: 0.5rem; display: inline-block;">New</span>
+            </p>
+          </div>
+          <div class="card">
+            <h3>Card with Pills</h3>
+            <p>
+              Use pills for tech stacks and tags:
+              <span class="pill">React</span>
+              <span class="pill">CSS</span>
+              <span class="pill">Synthwave</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- COLORS -->
+      <section id="colors">
+        <div class="section-label">03 · Design System</div>
+        <h2 class="section-title">Color Palette</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <div style="width: 100%; height: 80px; background: var(--cursy-green); border-radius: 0.5rem; margin-bottom: 0.75rem;"></div>
+            <h3>Green</h3>
+            <p><code>#22c55e</code> — Energy, growth, action</p>
+          </div>
+          <div class="card">
+            <div style="width: 100%; height: 80px; background: var(--cursy-cyan); border-radius: 0.5rem; margin-bottom: 0.75rem;"></div>
+            <h3>Cyan</h3>
+            <p><code>#22d3ee</code> — Tech, clarity, innovation</p>
+          </div>
+          <div class="card">
+            <div style="width: 100%; height: 80px; background: var(--cursy-purple); border-radius: 0.5rem; margin-bottom: 0.75rem;"></div>
+            <h3>Purple</h3>
+            <p><code>#a855f7</code> — Magic, creativity, depth</p>
+          </div>
+          <div class="card">
+            <div style="width: 100%; height: 80px; background: var(--cursy-orange); border-radius: 0.5rem; margin-bottom: 0.75rem;"></div>
+            <h3>Orange</h3>
+            <p><code>#f97316</code> — Warmth, excitement, drive</p>
+          </div>
+          <div class="card">
+            <div style="width: 100%; height: 80px; background: var(--cursy-slate-700); border-radius: 0.5rem; margin-bottom: 0.75rem;"></div>
+            <h3>Slate 700</h3>
+            <p><code>#1e293b</code> — Mid-tone background</p>
+          </div>
+          <div class="card">
+            <div style="width: 100%; height: 80px; background: var(--cursy-slate-900); border-radius: 0.5rem; margin-bottom: 0.75rem; border: 1px solid rgba(148, 163, 184, 0.3);"></div>
+            <h3>Slate 900</h3>
+            <p><code>#020617</code> — Deep foundation</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ANIMATIONS -->
+      <section id="animations">
+        <div class="section-label">04 · Animations</div>
+        <h2 class="section-title">Hand-Crafted Effects</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>Orbit Glow</h3>
+            <p>Rotating conic gradient background effect</p>
+            <div style="position: relative; height: 120px; margin-top: 1rem; border-radius: 0.5rem; overflow: hidden;">
+              <div class="car-orbit"></div>
+              <div style="position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; height: 100%; color: var(--cursy-slate-200);">
+                Rotating Glow
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Light Sweep</h3>
+            <p>Animated light strip that sweeps across</p>
+            <div style="position: relative; height: 120px; margin-top: 1rem; border-radius: 0.5rem; background: var(--cursy-slate-900); overflow: hidden;">
+              <div class="light-sweep" style="bottom: 50%;"></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Scanlines</h3>
+            <p>Retro CRT scanline effect (on body)</p>
+            <div style="margin-top: 1rem; padding: 1rem; background: rgba(15, 23, 42, 0.5); border-radius: 0.5rem;">
+              <p style="font-size: 0.75rem; color: var(--cursy-slate-400);">
+                The scanlines effect is applied to the entire page via the <code>.scanlines</code> class on the body element.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEW COMPONENTS -->
+      <section>
+        <div class="section-label">05 · New Components</div>
+        <h2 class="section-title">*Forms, Alerts, Modals & More* 🆕</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>*Forms* 📝</h3>
+            <div class="form-group">
+              <label class="form-label">*Email*</label>
+              <input type="email" class="form-input" placeholder="*your@email.com*" />
+            </div>
+            <div class="form-group">
+              <label class="form-checkbox-label">
+                <input type="checkbox" class="form-checkbox" />
+                *I agree to the terms*
+              </label>
+            </div>
+          </div>
+          <div class="card">
+            <h3>*Alerts* ⚠️</h3>
+            <div class="alert alert-success">*Success!* Everything worked! ✅</div>
+            <div class="alert alert-info">*Info:* Here's some information ℹ️</div>
+            <div class="alert alert-warning">*Warning:* Be careful! ⚠️</div>
+            <div class="alert alert-error">*Error:* Something went wrong! ❌</div>
+          </div>
+          <div class="card">
+            <h3>*Code Blocks* 💻</h3>
+            <div class="code-block">
+<span class="comment">// *Example code*</span>
+<span class="keyword">const</span> <span class="string">greeting</span> = <span class="string">"*Hello CURSY!*"</span>;
+<span class="keyword">console</span>.<span class="string">log</span>(<span class="string">greeting</span>);
+            </div>
+            <p style="margin-top: 0.5rem;">*Inline code*: <code class="inline-code">*cursy.css*</code></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TABLES -->
+      <section>
+        <div class="section-label">06 · Components</div>
+        <h2 class="section-title">*Tables* 📊</h2>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>*Component*</th>
+                <th>*Status*</th>
+                <th>*Version*</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>*Buttons*</td>
+                <td><span class="badge">*Ready*</span></td>
+                <td>*v0.420a*</td>
+              </tr>
+              <tr>
+                <td>*Cards*</td>
+                <td><span class="badge">*Ready*</span></td>
+                <td>*v0.420a*</td>
+              </tr>
+              <tr>
+                <td>*Forms*</td>
+                <td><span class="badge">*Ready*</span></td>
+                <td>*v0.420a*</td>
+              </tr>
+              <tr>
+                <td>*Modals*</td>
+                <td><span class="badge">*Ready*</span></td>
+                <td>*v0.420a*</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- TYPOGRAPHY -->
+      <section>
+        <div class="section-label">07 · Typography</div>
+        <h2 class="section-title">Font System</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Orbitron</h3>
+            <p style="font-family: var(--font-orbitron); font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.1em;">
+              Headers & Branding
+            </p>
+            <p style="margin-top: 0.5rem; font-size: 0.75rem; color: var(--cursy-slate-400);">
+              Futuristic, bold, perfect for synthwave aesthetics
+            </p>
+          </div>
+          <div class="card">
+            <h3>Inter</h3>
+            <p style="font-family: var(--font-inter); font-size: 1rem;">
+              Body Text & Content
+            </p>
+            <p style="margin-top: 0.5rem; font-size: 0.75rem; color: var(--cursy-slate-400);">
+              Clean, readable, modern sans-serif
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- USAGE -->
+      <section id="docs">
+        <div class="section-label">06 · Documentation</div>
+        <h2 class="section-title">Quick Start</h2>
+        <div class="card">
+          <h3>Installation</h3>
+          <p style="margin-bottom: 1rem;">
+            Simply include the CSS file and Google Fonts in your HTML:
+          </p>
+          <pre style="background: var(--cursy-slate-900); padding: 1rem; border-radius: 0.5rem; overflow-x: auto; font-size: 0.8rem; color: var(--cursy-slate-300);"><code>&lt;link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" /&gt;
+&lt;link rel="stylesheet" href="cursy.css" /&gt;</code></pre>
+          <p style="margin-top: 1rem;">
+            Add the <code>.scanlines</code> class to your body for the retro effect.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      CURSY Framework · A FutureVision Labs / Team DC project · Built with love for the Imaginatorium 🚗💖✨
+    </footer>
+  </div>
+</body>
+</html>
+

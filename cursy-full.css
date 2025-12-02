@@ -1,0 +1,17 @@
+/**
+ * CURSY FRAMEWORK v0.420a - FULL VERSION 🚗💖✨
+ * Complete framework with all components and utilities
+ * 
+ * *The Bulma/Tailwind killer edition!* 💪
+ * *Everything you need in one file* 📦
+ */
+
+/* Import base framework */
+@import url('cursy.css');
+
+/* Import utilities */
+@import url('cursy-utilities.css');
+
+/* Import additional components */
+@import url('cursy-components.css');
+

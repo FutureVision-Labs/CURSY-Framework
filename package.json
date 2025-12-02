@@ -1,0 +1,40 @@
+{
+  "name": "cursy-framework",
+  "version": "0.420a",
+  "description": "A hand-crafted, synthwave/cyberpunk CSS framework - The Bulma/Tailwind killer!",
+  "main": "cursy.css",
+  "files": [
+    "cursy.css",
+    "cursy-utilities.css",
+    "cursy-components.css",
+    "cursy-full.css",
+    "README.md",
+    "docs/"
+  ],
+  "keywords": [
+    "css",
+    "framework",
+    "synthwave",
+    "cyberpunk",
+    "tailwind",
+    "bulma",
+    "utility-first",
+    "components",
+    "hand-crafted",
+    "futurevision",
+    "team-dc"
+  ],
+  "author": "Team DC / FutureVision Labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/futurevisionlabs/cursy-framework"
+  },
+  "files": [
+    "cursy.css",
+    "README.md",
+    "docs/"
+  ],
+  "style": "cursy.css"
+}
+

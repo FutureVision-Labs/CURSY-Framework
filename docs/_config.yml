@@ -1,0 +1,7 @@
+# GitHub Pages Configuration for CURSY Framework
+title: CURSY Framework
+description: A hand-crafted, synthwave/cyberpunk CSS framework - The Bulma/Tailwind killer!
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-sitemap
+

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CURSY Framework v0.420a – *Hand-Crafted Synthwave CSS* 🚗💖✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="cursy.css" />
+  <style>
+    .hero-glow {
+      position: absolute;
+      inset: -30%;
+      border-radius: 999px;
+      background: conic-gradient(from 180deg, rgba(34, 197, 94, 0.15), transparent 30%, rgba(34, 211, 238, 0.2), transparent 60%, rgba(168, 85, 247, 0.15), transparent 90%, rgba(249, 115, 22, 0.1));
+      filter: blur(40px);
+      opacity: 0.8;
+      z-index: -1;
+      animation: orbitGlow 20s linear infinite;
+    }
+    .emoji-large {
+      font-size: 4rem;
+      line-height: 1;
+      font-style: italic;
+      display: inline-block;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    .promo-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(34, 211, 238, 0.2));
+      border: 1px solid rgba(34, 211, 238, 0.5);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--cursy-slate-200);
+      margin: 0.5rem;
+    }
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .code-block {
+      background: var(--cursy-slate-900);
+      border: 1px solid rgba(30, 64, 175, 0.7);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      overflow-x: auto;
+      font-family: 'Courier New', monospace;
+      font-size: 0.85rem;
+      color: var(--cursy-slate-300);
+      line-height: 1.6;
+      margin: 1rem 0;
+    }
+    .code-block code {
+      color: var(--cursy-cyan);
+    }
+    .code-block .keyword { color: var(--cursy-purple); }
+    .code-block .string { color: var(--cursy-green); }
+    .code-block .comment { color: var(--cursy-slate-500); font-style: italic; }
+    .cta-section {
+      background: radial-gradient(circle at center, rgba(15, 23, 42, 0.95), rgba(2, 6, 23, 0.98));
+      border: 2px solid rgba(34, 211, 238, 0.5);
+      border-radius: 1.5rem;
+      padding: 3rem 2rem;
+      text-align: center;
+      margin: 3rem 0;
+      box-shadow: 0 0 50px rgba(34, 211, 238, 0.3);
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .stat {
+      text-align: center;
+      padding: 1.5rem;
+      background: rgba(15, 23, 42, 0.6);
+      border-radius: 1rem;
+      border: 1px solid rgba(148, 163, 184, 0.3);
+    }
+    .stat-number {
+      font-family: var(--font-orbitron);
+      font-size: 2.5rem;
+      color: var(--cursy-cyan);
+      display: block;
+    }
+    .stat-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--cursy-slate-400);
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body class="scanlines">
+  <div class="page">
+    <header>
+      <div class="nav-inner">
+        <div class="brand">
+          <div class="brand-mark">
+            <span>CF</span>
+          </div>
+          <div class="brand-text">
+            <div class="brand-title">CURSY Framework</div>
+            <div class="brand-sub">v0.420a *Synthwave CSS*</div>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#features">*Features*</a></li>
+            <li><a href="#components">*Components*</a></li>
+            <li><a href="#download">*Download*</a></li>
+            <li><a href="#docs" class="btn-primary">*Get Started* 🚀</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="top">
+        <div class="hero-glow"></div>
+        <div class="hero-copy" style="position: relative; z-index: 2;">
+          <h1>
+            <span>*FutureVision Labs · Team DC*</span>
+            CURSY Framework<br />
+            <small style="font-size:0.6rem;letter-spacing:0.24em;text-transform:uppercase;color:#60a5fa;">
+              *v0.420a · Hand-Crafted Synthwave CSS · NOT Another Purple Gradient* 😎✨
+            </small>
+          </h1>
+          <p class="lede">
+            *The CSS framework that breaks the mold.* 💫 Built with *love* 💖, *craft* 🎨, and *zero AI templates* 🚫. 
+            *Green-cyan-purple-orange* 🌈 vibes for projects that need *personality* 🌟, not cookie-cutter designs.
+          </p>
+
+          <div class="hero-badges">
+            <div class="badge">*No Purple Gradients* 🎨</div>
+            <div class="badge">*100% Hand-Crafted* ✋</div>
+            <div class="badge">*Synthwave Aesthetic* 🌃</div>
+            <div class="badge">*v0.420a* 🚗</div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#download" class="btn-primary">
+              <span>*Download Now* ⬇️</span>
+            </a>
+            <a href="#docs" class="btn-ghost">*View Docs* 📚</a>
+          </div>
+
+          <div class="hero-meta">
+            *Built for Mini-Cursy · Part of The Imaginatorium · Free for FutureVision projects* 🚗💖✨
+          </div>
+        </div>
+
+        <div class="hero-car" aria-hidden="true" style="position: relative; z-index: 2;">
+          <div class="car-orbit"></div>
+          <div class="card">
+            <div style="padding: 2rem; text-align: center;">
+              <div class="emoji-large">🚗💖✨</div>
+              <h3 style="margin-top: 1rem; margin-bottom: 0.5rem;">*CURSY Framework*</h3>
+              <p style="font-size: 0.75rem; color: var(--cursy-slate-400);">
+                *Hand-crafted CSS for synthwave projects*
+              </p>
+              <div style="margin-top: 1.5rem;">
+                <span class="promo-badge">*v0.420a*</span>
+                <span class="promo-badge">*MIT License*</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-number">420</span>
+            <div class="stat-label">*Lines of Pure CSS*</div>
+          </div>
+          <div class="stat">
+            <span class="stat-number">15+</span>
+            <div class="stat-label">*Components*</div>
+          </div>
+          <div class="stat">
+            <span class="stat-number">3</span>
+            <div class="stat-label">*Custom Animations*</div>
+          </div>
+          <div class="stat">
+            <span class="stat-number">0</span>
+            <div class="stat-label">*Purple Gradients* 😎</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section id="features">
+        <div class="section-label">01 · *Why CURSY?*</div>
+        <h2 class="section-title">*Built Different* 💫</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <span class="feature-icon">🎨</span>
+            <h3>*Unique Palette*</h3>
+            <p>
+              *Green-cyan-purple-orange* 🌈 accents on deep slate backgrounds. 
+              *Not another generic purple gradient* that everyone's using. *Stand out* ✨
+            </p>
+          </div>
+          <div class="card">
+            <span class="feature-icon">✋</span>
+            <h3>*Hand-Crafted*</h3>
+            <p>
+              *Every line written by hand* 💖, *every animation tuned* 🎯, *every color chosen* 🎨. 
+              *No AI templates, no cookie-cutter designs* 🚫
+            </p>
+          </div>
+          <div class="card">
+            <span class="feature-icon">🌃</span>
+            <h3>*Synthwave Vibes*</h3>
+            <p>
+              *Retro-futuristic aesthetics* 🚀 with *scanlines* 📺, *orbit glows* 💫, 
+              and *light sweeps* ✨. *Perfect for cyberpunk projects* 🌆
+            </p>
+          </div>
+          <div class="card">
+            <span class="feature-icon">⚡</span>
+            <h3>*Lightweight*</h3>
+            <p>
+              *Just CSS* 📦. *No JavaScript required* 🚫. *No build step* ⚙️. 
+              *Drop it in and go* 🚀
+            </p>
+          </div>
+          <div class="card">
+            <span class="feature-icon">🎯</span>
+            <h3>*Utility-First*</h3>
+            <p>
+              *Inspired by Tailwind* 💨, but *custom-built* 🔨. *Utility classes* 🛠️ 
+              for *rapid development* ⚡
+            </p>
+          </div>
+          <div class="card">
+            <span class="feature-icon">💖</span>
+            <h3>*Built with Love*</h3>
+            <p>
+              *Created for Mini-Cursy* 🚗, *refined for The Imaginatorium* 🏛️, 
+              *shared with the world* 🌍
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPONENTS PREVIEW -->
+      <section id="components">
+        <div class="section-label">02 · *Components*</div>
+        <h2 class="section-title">*Everything You Need* 🛠️</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>*Buttons* 🔘</h3>
+            <p>*Primary and ghost variants* with *smooth hover effects* ✨</p>
+            <div style="margin-top: 1rem;">
+              <a href="#" class="btn-primary">*Primary*</a>
+              <a href="#" class="btn-ghost" style="margin-left: 0.5rem;">*Ghost*</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3>*Cards* 🃏</h3>
+            <p>*Beautiful cards* with *hover glows* 💫 and *subtle shadows* 🌑</p>
+          </div>
+          <div class="card">
+            <h3>*Badges & Pills* 🏷️</h3>
+            <p>*Tags, labels, tech stacks* 📚</p>
+            <div style="margin-top: 1rem;">
+              <span class="badge">*New*</span>
+              <span class="pill">*React*</span>
+              <span class="pill">*CSS*</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>*Navigation* 🧭</h3>
+            <p>*Sticky header* 📌 with *brand mark* 🎨 and *smooth link animations* ✨</p>
+          </div>
+          <div class="card">
+            <h3>*Hero Sections* 🦸</h3>
+            <p>*Two-column layouts* 📐 with *gradient text* 🌈 and *badge support* 🏷️</p>
+          </div>
+          <div class="card">
+            <h3>*Animations* 🎬</h3>
+            <p>*Orbit glows* 💫, *light sweeps* ✨, *scanlines* 📺</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CODE EXAMPLE -->
+      <section>
+        <div class="section-label">03 · *Quick Start*</div>
+        <h2 class="section-title">*Get Started in 60 Seconds* ⏱️</h2>
+        <div class="card">
+          <h3>*1. Include CSS* 📦</h3>
+          <div class="code-block">
+<span class="comment">&lt;!-- Include Google Fonts --&gt;</span>
+&lt;<span class="keyword">link</span> <span class="string">href</span>=<span class="string">"https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap"</span> <span class="string">rel</span>=<span class="string">"stylesheet"</span> /&gt;
+
+<span class="comment">&lt;!-- Include CURSY Framework --&gt;</span>
+&lt;<span class="keyword">link</span> <span class="string">rel</span>=<span class="string">"stylesheet"</span> <span class="string">href</span>=<span class="string">"cursy.css"</span> /&gt;
+          </div>
+        </div>
+        <div class="card">
+          <h3>*2. Add Scanlines* 📺</h3>
+          <div class="code-block">
+&lt;<span class="keyword">body</span> <span class="string">class</span>=<span class="string">"scanlines"</span>&gt;
+          </div>
+        </div>
+        <div class="card">
+          <h3>*3. Build Something Awesome* 🚀</h3>
+          <div class="code-block">
+&lt;<span class="keyword">div</span> <span class="string">class</span>=<span class="string">"card"</span>&gt;
+  &lt;<span class="keyword">h3</span>&gt;*My Card*&lt;/<span class="keyword">h3</span>&gt;
+  &lt;<span class="keyword">p</span>&gt;*Content here*&lt;/<span class="keyword">p</span>&gt;
+  &lt;<span class="keyword">a</span> <span class="string">href</span>=<span class="string">"#"</span> <span class="string">class</span>=<span class="string">"btn-primary"</span>&gt;*Click Me*&lt;/<span class="keyword">a</span>&gt;
+&lt;/<span class="keyword">div</span>&gt;
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section id="download">
+        <div class="cta-section">
+          <div class="emoji-large" style="font-size: 5rem; margin-bottom: 1rem;">🚗💖✨</div>
+          <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">*Ready to Build?* 🚀</h2>
+          <p style="font-size: 1.1rem; color: var(--cursy-slate-300); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+            *Download CURSY Framework v0.420a* and start building *beautiful synthwave interfaces* today! 💫
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="cursy.css" download="cursy.css" class="btn-primary" style="font-size: 1rem; padding: 0.75rem 2rem;">
+              *Download CSS* ⬇️
+            </a>
+            <a href="index.html" class="btn-ghost" style="font-size: 1rem; padding: 0.75rem 2rem;">
+              *View Demo* 👀
+            </a>
+            <a href="docs/COMPONENTS.md" class="btn-ghost" style="font-size: 1rem; padding: 0.75rem 2rem;">
+              *Read Docs* 📚
+            </a>
+          </div>
+          <div style="margin-top: 2rem; font-size: 0.75rem; color: var(--cursy-slate-500);">
+            *MIT License · Free for FutureVision projects · Built with love* 💖
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER CTA -->
+      <section>
+        <div class="card" style="text-align: center; padding: 2.5rem;">
+          <h3 style="margin-bottom: 1rem;">*Part of The Imaginatorium* 🏛️</h3>
+          <p style="color: var(--cursy-slate-400); margin-bottom: 1.5rem;">
+            *CURSY Framework is part of the Imaginatorium ecosystem* — *where every design decision becomes canon* 📜
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <span class="badge">*Mini-Cursy* 🚗</span>
+            <span class="badge">*VIBE-CHAT* 💬</span>
+            <span class="badge">*VIBE-IDE* 💻</span>
+            <span class="badge">*The Technomancer* 📖</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      *CURSY Framework v0.420a* · *A FutureVision Labs / Team DC project* · *Built with love for the Imaginatorium* 🚗💖✨
+    </footer>
+  </div>
+</body>
+</html>
+
