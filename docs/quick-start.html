@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Start – CURSY Framework v4.20a</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="cursy.css" />
+  <link rel="stylesheet" href="cursy-utilities.css" />
+  <link rel="stylesheet" href="cursy-components.css" />
+</head>
+<body class="scanlines">
+  <div class="page">
+    <!--#include file="_nav.html" -->
+    
+    <main>
+      <section>
+        <div class="section-label">Quick Start</div>
+        <h1 class="section-title">Get Started in 60 Seconds</h1>
+        <p class="lede">Install CURSY Framework and start building beautiful synthwave interfaces.</p>
+      </section>
+
+      <section>
+        <h2 class="section-title">Installation</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>1. Download the Framework</h3>
+            <p>Copy the CSS files to your project or link directly:</p>
+            <div class="code-block">
+<code>&lt;link rel="stylesheet" href="path/to/cursy.css" /&gt;</code>
+            </div>
+          </div>
+          <div class="card">
+            <h3>2. Include Google Fonts</h3>
+            <div class="code-block">
+<code>&lt;link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" /&gt;</code>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="margin-top: 1rem;">
+          <h3>3. Add Scanlines Effect (Optional)</h3>
+          <div class="code-block">
+<code>&lt;body class="scanlines"&gt;</code>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Basic Template</h2>
+        <div class="card">
+          <div class="code-block">
+<code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;My CURSY Project&lt;/title&gt;
+  &lt;link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" /&gt;
+  &lt;link rel="stylesheet" href="cursy.css"&gt;
+&lt;/head&gt;
+&lt;body class="scanlines"&gt;
+  &lt;div class="page"&gt;
+    &lt;header&gt;
+      &lt;div class="nav-inner"&gt;
+        &lt;div class="brand"&gt;
+          &lt;div class="brand-mark"&gt;
+            &lt;span&gt;MC&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class="brand-text"&gt;
+            &lt;div class="brand-title"&gt;My Project&lt;/div&gt;
+            &lt;div class="brand-sub"&gt;Synthwave vibes&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;nav&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#features"&gt;Features&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#contact" class="btn-primary"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/nav&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+      &lt;section class="hero"&gt;
+        &lt;div class="hero-copy"&gt;
+          &lt;h1&gt;Welcome to CURSY&lt;/h1&gt;
+          &lt;p class="lede"&gt;Build beautiful synthwave interfaces&lt;/p&gt;
+          &lt;div class="hero-actions"&gt;
+            &lt;a href="#get-started" class="btn-primary"&gt;Get Started&lt;/a&gt;
+            &lt;a href="#learn-more" class="btn-ghost"&gt;Learn More&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+
+      &lt;section&gt;
+        &lt;div class="section-label"&gt;01 · Features&lt;/div&gt;
+        &lt;h2 class="section-title"&gt;What Makes CURSY Special&lt;/h2&gt;
+        &lt;div class="grid grid-3"&gt;
+          &lt;div class="card"&gt;
+            &lt;h3&gt;Hand-Crafted&lt;/h3&gt;
+            &lt;p&gt;Not another AI-generated template&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class="card"&gt;
+            &lt;h3&gt;Unique Colors&lt;/h3&gt;
+            &lt;p&gt;Green-cyan-purple-orange palette&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class="card"&gt;
+            &lt;h3&gt;Animations&lt;/h3&gt;
+            &lt;p&gt;Custom orbit glows and light sweeps&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+      Built with CURSY Framework · FutureVision Labs
+    &lt;/footer&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Common Patterns</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Navigation Bar</h3>
+            <div class="code-block">
+<code>&lt;header&gt;
+  &lt;div class="nav-inner"&gt;
+    &lt;div class="brand"&gt;
+      &lt;div class="brand-mark"&gt;&lt;span&gt;LOGO&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="brand-text"&gt;
+        &lt;div class="brand-title"&gt;Site Name&lt;/div&gt;
+        &lt;div class="brand-sub"&gt;Tagline&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Feature Cards</h3>
+            <div class="code-block">
+<code>&lt;div class="grid grid-3"&gt;
+  &lt;div class="card"&gt;
+    &lt;h3&gt;Feature One&lt;/h3&gt;
+    &lt;p&gt;Description here&lt;/p&gt;
+    &lt;span class="badge"&gt;New&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Customization</h2>
+        <div class="card">
+          <h3>CSS Variables</h3>
+          <p>Override colors in your own CSS:</p>
+          <div class="code-block">
+<code>:root {
+  --cursy-green: #22c55e;
+  --cursy-cyan: #22d3ee;
+  --cursy-purple: #a855f7;
+  --cursy-orange: #f97316;
+}</code>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--#include file="_footer.html" -->
+  </div>
+</body>
+</html>
+

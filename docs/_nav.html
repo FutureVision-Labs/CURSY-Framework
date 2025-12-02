@@ -1,0 +1,80 @@
+<!-- Shared Navigation Component -->
+<header>
+  <div class="nav-inner">
+    <div class="brand">
+      <a href="index.html" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+        <div class="brand-mark">
+          <span>CF</span>
+        </div>
+        <div class="brand-text">
+          <div class="brand-title">CURSY Framework</div>
+          <div class="brand-sub">v4.20a Synthwave CSS</div>
+        </div>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <div class="dropdown">
+            <a href="#" class="dropdown-trigger">Documentation</a>
+            <div class="dropdown-menu">
+              <a href="index.html" class="dropdown-item">Overview</a>
+              <a href="components.html" class="dropdown-item">Components</a>
+              <a href="utilities.html" class="dropdown-item">Utilities</a>
+              <a href="themes.html" class="dropdown-item">Themes</a>
+              <div class="dropdown-divider"></div>
+              <a href="quick-start.html" class="dropdown-item">Quick Start</a>
+              <a href="features.html" class="dropdown-item">Features</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a href="#" class="dropdown-trigger">Examples</a>
+            <div class="dropdown-menu">
+              <a href="examples.html" class="dropdown-item">Component Gallery</a>
+              <a href="examples.html#forms" class="dropdown-item">Forms</a>
+              <a href="examples.html#layouts" class="dropdown-item">Layouts</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="https://github.com/FutureVision-Labs/CURSY-Framework" target="_blank">GitHub</a></li>
+        <li><a href="index.html#download" class="btn-primary">Download</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+// Dropdown functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdowns = document.querySelectorAll('.dropdown');
+  
+  dropdowns.forEach(dropdown => {
+    const trigger = dropdown.querySelector('.dropdown-trigger');
+    
+    trigger.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      // Close other dropdowns
+      dropdowns.forEach(d => {
+        if (d !== dropdown) {
+          d.classList.remove('active');
+        }
+      });
+      
+      // Toggle this dropdown
+      dropdown.classList.toggle('active');
+    });
+  });
+  
+  // Close dropdowns when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.dropdown')) {
+      dropdowns.forEach(d => d.classList.remove('active'));
+    }
+  });
+});
+</script>
+

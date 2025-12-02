@@ -1,0 +1,115 @@
+/**
+ * CURSY FRAMEWORK v4.20a - THEMES 🚗💖✨
+ * Theme library so everyone's sites don't look the same!
+ */
+
+/* ============================================
+   NEON NIGHTS THEME
+   ============================================ */
+
+.theme-neon-nights {
+  --cursy-green: #ec4899;
+  --cursy-cyan: #8b5cf6;
+  --cursy-purple: #a855f7;
+  --cursy-orange: #f59e0b;
+}
+
+.theme-neon-nights .btn-primary {
+  background: radial-gradient(circle at 0 0, #ec4899, transparent 50%),
+    radial-gradient(circle at 100% 0, #8b5cf6, transparent 50%),
+    linear-gradient(135deg, #ec4899, #8b5cf6);
+}
+
+.theme-neon-nights .brand-mark {
+  background: conic-gradient(from 210deg, #ec4899, #8b5cf6, #a855f7, #f59e0b, #ec4899);
+}
+
+/* ============================================
+   OCEAN DEPTH THEME
+   ============================================ */
+
+.theme-ocean-depth {
+  --cursy-green: #06b6d4;
+  --cursy-cyan: #3b82f6;
+  --cursy-purple: #6366f1;
+  --cursy-orange: #0ea5e9;
+}
+
+.theme-ocean-depth .btn-primary {
+  background: radial-gradient(circle at 0 0, #06b6d4, transparent 50%),
+    radial-gradient(circle at 100% 0, #3b82f6, transparent 50%),
+    linear-gradient(135deg, #06b6d4, #3b82f6);
+}
+
+.theme-ocean-depth .brand-mark {
+  background: conic-gradient(from 210deg, #06b6d4, #3b82f6, #6366f1, #0ea5e9, #06b6d4);
+}
+
+/* ============================================
+   SUNSET DRIVE THEME
+   ============================================ */
+
+.theme-sunset-drive {
+  --cursy-green: #f97316;
+  --cursy-cyan: #ef4444;
+  --cursy-purple: #ec4899;
+  --cursy-orange: #f59e0b;
+}
+
+.theme-sunset-drive .btn-primary {
+  background: radial-gradient(circle at 0 0, #f97316, transparent 50%),
+    radial-gradient(circle at 100% 0, #ef4444, transparent 50%),
+    linear-gradient(135deg, #f97316, #ef4444);
+}
+
+.theme-sunset-drive .brand-mark {
+  background: conic-gradient(from 210deg, #f97316, #ef4444, #ec4899, #f59e0b, #f97316);
+}
+
+/* ============================================
+   FOREST DREAMS THEME
+   ============================================ */
+
+.theme-forest-dreams {
+  --cursy-green: #22c55e;
+  --cursy-cyan: #10b981;
+  --cursy-purple: #059669;
+  --cursy-orange: #84cc16;
+}
+
+.theme-forest-dreams .btn-primary {
+  background: radial-gradient(circle at 0 0, #22c55e, transparent 50%),
+    radial-gradient(circle at 100% 0, #10b981, transparent 50%),
+    linear-gradient(135deg, #22c55e, #10b981);
+}
+
+.theme-forest-dreams .brand-mark {
+  background: conic-gradient(from 210deg, #22c55e, #10b981, #059669, #84cc16, #22c55e);
+}
+
+/* ============================================
+   MONOCHROME THEME
+   ============================================ */
+
+.theme-monochrome {
+  --cursy-green: #64748b;
+  --cursy-cyan: #475569;
+  --cursy-purple: #334155;
+  --cursy-orange: #94a3b8;
+}
+
+.theme-monochrome .btn-primary {
+  background: radial-gradient(circle at 0 0, #64748b, transparent 50%),
+    radial-gradient(circle at 100% 0, #475569, transparent 50%),
+    linear-gradient(135deg, #64748b, #475569);
+  color: var(--cursy-slate-100);
+}
+
+.theme-monochrome .brand-mark {
+  background: conic-gradient(from 210deg, #64748b, #475569, #334155, #94a3b8, #64748b);
+}
+
+.theme-monochrome .brand-mark span {
+  color: var(--cursy-slate-100);
+}
+

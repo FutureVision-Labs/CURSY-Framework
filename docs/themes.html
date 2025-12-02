@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Themes – CURSY Framework v4.20a</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="cursy.css" />
+  <link rel="stylesheet" href="cursy-utilities.css" />
+  <link rel="stylesheet" href="cursy-components.css" />
+  <link rel="stylesheet" href="themes.css" />
+</head>
+<body class="scanlines">
+  <div class="page">
+    <!--#include file="_nav.html" -->
+    
+    <main>
+      <section>
+        <div class="section-label">Themes</div>
+        <h1 class="section-title">Theme Library</h1>
+        <p class="lede">Customize CURSY Framework with pre-built themes. So everyone's sites don't look the same!</p>
+      </section>
+
+      <section>
+        <div class="card">
+          <h3>How Themes Work</h3>
+          <p>Simply include a theme CSS file after the main CURSY Framework CSS. Themes override color variables and add custom styling while maintaining the same component structure.</p>
+          <div class="code-block">
+<code>&lt;link rel="stylesheet" href="cursy.css"&gt;
+&lt;link rel="stylesheet" href="themes/neon-nights.css"&gt;</code>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Available Themes</h2>
+        <div class="grid grid-3">
+          <div class="card theme-preview" data-theme="default">
+            <div class="theme-header" style="background: conic-gradient(from 210deg, #22c55e, #22d3ee, #a855f7, #f97316); height: 80px; border-radius: 0.5rem 0.5rem 0 0; margin: -1.2rem -1.3rem 1rem -1.3rem;"></div>
+            <h3>Default Synthwave</h3>
+            <p>The original CURSY theme with green-cyan-purple-orange palette.</p>
+            <a href="#" class="btn-ghost" style="margin-top: 1rem;">Use Theme</a>
+          </div>
+
+          <div class="card theme-preview" data-theme="neon-nights">
+            <div class="theme-header" style="background: linear-gradient(135deg, #8b5cf6, #ec4899, #f59e0b); height: 80px; border-radius: 0.5rem 0.5rem 0 0; margin: -1.2rem -1.3rem 1rem -1.3rem;"></div>
+            <h3>Neon Nights</h3>
+            <p>Purple-pink-orange gradient theme for vibrant cyberpunk vibes.</p>
+            <a href="#" class="btn-ghost" style="margin-top: 1rem;">Use Theme</a>
+          </div>
+
+          <div class="card theme-preview" data-theme="ocean-depth">
+            <div class="theme-header" style="background: linear-gradient(135deg, #06b6d4, #3b82f6, #6366f1); height: 80px; border-radius: 0.5rem 0.5rem 0 0; margin: -1.2rem -1.3rem 1rem -1.3rem;"></div>
+            <h3>Ocean Depth</h3>
+            <p>Cool blue-cyan-indigo palette for deep, calming interfaces.</p>
+            <a href="#" class="btn-ghost" style="margin-top: 1rem;">Use Theme</a>
+          </div>
+
+          <div class="card theme-preview" data-theme="sunset-drive">
+            <div class="theme-header" style="background: linear-gradient(135deg, #f97316, #ef4444, #ec4899); height: 80px; border-radius: 0.5rem 0.5rem 0 0; margin: -1.2rem -1.3rem 1rem -1.3rem;"></div>
+            <h3>Sunset Drive</h3>
+            <p>Warm orange-red-pink gradient for energetic, passionate projects.</p>
+            <a href="#" class="btn-ghost" style="margin-top: 1rem;">Use Theme</a>
+          </div>
+
+          <div class="card theme-preview" data-theme="forest-dreams">
+            <div class="theme-header" style="background: linear-gradient(135deg, #22c55e, #10b981, #059669); height: 80px; border-radius: 0.5rem 0.5rem 0 0; margin: -1.2rem -1.3rem 1rem -1.3rem;"></div>
+            <h3>Forest Dreams</h3>
+            <p>Green gradient theme for nature, growth, and organic projects.</p>
+            <a href="#" class="btn-ghost" style="margin-top: 1rem;">Use Theme</a>
+          </div>
+
+          <div class="card theme-preview" data-theme="monochrome">
+            <div class="theme-header" style="background: linear-gradient(135deg, #64748b, #475569, #334155); height: 80px; border-radius: 0.5rem 0.5rem 0 0; margin: -1.2rem -1.3rem 1rem -1.3rem;"></div>
+            <h3>Monochrome</h3>
+            <p>Elegant grayscale theme for minimalist, professional designs.</p>
+            <a href="#" class="btn-ghost" style="margin-top: 1rem;">Use Theme</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Creating Custom Themes</h2>
+        <div class="card">
+          <h3>Theme Structure</h3>
+          <p>Create a new CSS file that overrides CURSY variables:</p>
+          <div class="code-block">
+<code>/* themes/my-theme.css */
+:root {
+  --cursy-green: #your-color;
+  --cursy-cyan: #your-color;
+  --cursy-purple: #your-color;
+  --cursy-orange: #your-color;
+}
+
+/* Add custom component overrides */
+.btn-primary {
+  background: your-gradient;
+}</code>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--#include file="_footer.html" -->
+  </div>
+</body>
+</html>
+
