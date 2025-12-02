@@ -767,13 +767,10 @@ footer ul li::marker {
   content: none;
 }
 
-/* Footer link styles - MUST be at the very end to override everything - HIGHEST SPECIFICITY */
-footer .footer-inner .grid ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary),
-footer .footer-inner .grid ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):link,
-footer .footer-inner .grid ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):visited,
-footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary),
-footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):link,
-footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):visited {
+/* Footer link styles - MUST be at the very end to override everything */
+footer ul li a,
+footer ul li a:link,
+footer ul li a:visited {
   color: var(--cursy-slate-400);
   text-decoration: none;
   font-size: 0.85rem;
@@ -781,43 +778,17 @@ footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):visited {
   display: inline-block;
 }
 
-footer .footer-inner .grid ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):hover,
-footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):hover {
+footer ul li a:hover {
   color: var(--cursy-cyan);
   text-decoration: none;
 }
 
-footer .footer-inner .grid ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):active,
-footer .footer-inner .grid ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):focus,
-footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):active,
-footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):focus {
+footer ul li a:active,
+footer ul li a:focus {
   color: var(--cursy-cyan);
   text-decoration: none;
   outline: 1px solid var(--cursy-cyan);
   outline-offset: 2px;
-}
-
-/* OVERRIDE GLOBAL LINK STYLES FOR FOOTER - MUST BE LAST (but exclude buttons) */
-footer a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary),
-footer a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):link,
-footer a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):visited,
-footer ul a,
-footer ul li a,
-footer .footer-inner a,
-footer .footer-inner ul a,
-footer .footer-inner ul li a {
-  color: var(--cursy-slate-400);
-  text-decoration: none;
-}
-
-footer a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):hover,
-footer a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):focus,
-footer ul a:hover,
-footer ul li a:hover,
-footer .footer-inner a:hover,
-footer .footer-inner ul a:hover,
-footer .footer-inner ul li a:hover {
-  color: var(--cursy-cyan);
 }
 
 /* Footer general text styling */
