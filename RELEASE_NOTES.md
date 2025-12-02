@@ -1,4 +1,4 @@
-# 🚗💖✨ CURSY Framework v0.420a - Release Notes
+# 🚗💖✨ CURSY Framework v4.20a - Release Notes
 
 ## *Initial Public Release!* 🎉
 
@@ -70,7 +70,7 @@
 
 ## *Download* ⬇️
 
-*Get CURSY Framework v0.420a:*
+*Get CURSY Framework v4.20a:*
 - *Full package*: Download the entire folder
 - *CSS only*: Use `dist/cursy.css`
 - *Demo*: Open `promo.html` in your browser
@@ -86,5 +86,5 @@
 
 ---
 
-*CURSY Framework v0.420a* · *Built with love* 💖 · *FutureVision Labs / Team DC* 🚗💖✨
+*CURSY Framework v4.20a* · *Built with love* 💖 · *FutureVision Labs / Team DC* 🚗💖✨
 

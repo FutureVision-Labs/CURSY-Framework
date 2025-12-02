@@ -1,4 +1,4 @@
-# 📦 CURSY Framework v0.420a - Package Contents
+# 📦 CURSY Framework v4.20a - Package Contents
 
 *Everything included in the release package!* 🚀
 
@@ -28,7 +28,7 @@ CURSY-Framework/
 
 ## 📊 Statistics
 
-- **Version**: *v0.420a* 🚗
+- **Version**: *v4.20a* 🚗
 - **Lines of CSS**: *545+* (and growing!)
 - **Components**: *15+* 🛠️
 - **Animations**: *3* 🎬
@@ -101,5 +101,5 @@ CURSY-Framework/
 
 ---
 
-*CURSY Framework v0.420a* · *Built with love* 💖 · *FutureVision Labs / Team DC* 🚗💖✨
+*CURSY Framework v4.20a* · *Built with love* 💖 · *FutureVision Labs / Team DC* 🚗💖✨
 

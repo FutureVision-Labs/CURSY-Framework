@@ -1,4 +1,4 @@
-# 🚗💖✨ CURSY FRAMEWORK v0.420a
+# 🚗💖✨ CURSY FRAMEWORK v4.20a
 
 **A hand-crafted, synthwave/cyberpunk CSS framework for FutureVision projects.**
 
@@ -117,7 +117,7 @@ CURSY Framework is part of the Imaginatorium ecosystem — where every design de
 
 ---
 
-**Version**: *v0.420a* 🚗  
+**Version**: *v4.20a* 🚗  
 **License**: *MIT* (for FutureVision projects) 📜  
 **Maintained by**: *Team DC / FutureVision Labs* 💖  
 **Built for**: *Mini-Cursy · The Imaginatorium* 🏛️

@@ -2,7 +2,7 @@
 
 ## *Mission Accomplished!* 🎉
 
-*CURSY Framework v0.420a is now a COMPLETE CSS framework that rivals Bulma and Tailwind!*
+*CURSY Framework v4.20a is now a COMPLETE CSS framework that rivals Bulma and Tailwind!*
 
 ---
 
@@ -143,7 +143,7 @@
 
 ## 📈 Roadmap
 
-### *v0.420a* (Current) ✅
+### *v4.20a* (Current) ✅
 - Base components
 - Utility classes
 - Additional components
@@ -174,7 +174,7 @@
 
 *Every line of code, every component, every utility class was crafted by hand for the Imaginatorium ecosystem.* 🏛️
 
-*CURSY Framework v0.420a* · *The Bulma/Tailwind Killer* 💪 · *Built for FutureVision Labs / Team DC* 🚗💖✨
+*CURSY Framework v4.20a* · *The Bulma/Tailwind Killer* 💪 · *Built for FutureVision Labs / Team DC* 🚗💖✨
 
 ---
 

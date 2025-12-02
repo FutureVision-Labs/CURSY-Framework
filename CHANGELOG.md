@@ -2,6 +2,21 @@
 
 All notable changes to CURSY Framework will be documented in this file.
 
+## [4.20a] - 2025-01-XX
+
+### 🚀 *Major Version Bump!* 💪
+
+*From 420 lines to 1900+ lines!* The framework has grown into a complete Bulma/Tailwind killer! 🎉
+
+#### *What Changed*
+- *Expanded from 420 lines to 1900+ lines* 📈
+- *Added 200+ utility classes* ⚡
+- *Added 15+ new components* 🛠️
+- *Complete GitHub Pages website* 🌐
+- *Auto-deploy workflow* 🚀
+
+---
+
 ## [0.420a] - 2025-01-XX
 
 ### 🚀 Initial Release

@@ -1,6 +1,6 @@
 {
   "name": "cursy-framework",
-  "version": "0.420a",
+  "version": "4.20a",
   "description": "A hand-crafted, synthwave/cyberpunk CSS framework - The Bulma/Tailwind killer!",
   "main": "cursy.css",
   "files": [

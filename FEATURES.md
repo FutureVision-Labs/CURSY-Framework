@@ -1,4 +1,4 @@
-# 🚗💖✨ CURSY Framework v0.420a - Feature List
+# 🚗💖✨ CURSY Framework v4.20a - Feature List
 
 ## *The Bulma/Tailwind Killer Edition!* 💪
 
@@ -201,5 +201,5 @@
 
 ---
 
-*CURSY Framework v0.420a* · *The Bulma/Tailwind Killer* 💪 · *Built with love* 💖 🚗💖✨
+*CURSY Framework v4.20a* · *The Bulma/Tailwind Killer* 💪 · *Built with love* 💖 🚗💖✨
 
