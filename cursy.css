@@ -728,15 +728,6 @@ footer h4 {
   margin-bottom: var(--spacing-md);
 }
 
-footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-footer ul li {
-  margin-bottom: 0.5rem;
-}
 
 footer .grid {
   margin-bottom: var(--spacing-xl);
@@ -746,37 +737,6 @@ footer .grid > div {
   padding: 0 var(--spacing-md);
 }
 
-/* Ensure footer lists don't have bullets and proper spacing - MUST override global resets */
-footer ul,
-footer .footer-inner ul,
-footer .grid ul {
-  list-style: none;
-  padding-left: 0;
-  margin-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-  margin: 0;
-}
-
-footer ul li,
-footer .footer-inner ul li,
-footer .grid ul li {
-  margin-bottom: 0.5rem;
-  padding-left: 0;
-  list-style: none;
-  display: block;
-}
-
-footer ul li::before,
-footer ul li::marker,
-footer .footer-inner ul li::before,
-footer .footer-inner ul li::marker,
-footer .grid ul li::before,
-footer .grid ul li::marker {
-  display: none;
-  content: none;
-}
 
 
 /* Footer general text styling */
@@ -1134,7 +1094,25 @@ footer h3 {
   }
 }
 
-/* Footer link styles - MUST be at the absolute end of the file */
+/* FOOTER STYLES - MUST BE AT THE ABSOLUTE END */
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+footer ul li::before,
+footer ul li::marker {
+  display: none;
+  content: none;
+}
+
 footer ul li a,
 footer ul li a:link,
 footer ul li a:visited {
