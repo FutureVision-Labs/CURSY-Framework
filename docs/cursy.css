@@ -767,7 +767,10 @@ footer ul li::marker {
   content: none;
 }
 
-/* Footer link styles - MUST be at the very end to override everything */
+/* Footer link styles - MUST be at the very end to override everything - HIGHEST SPECIFICITY */
+footer .footer-inner .grid ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary),
+footer .footer-inner .grid ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):link,
+footer .footer-inner .grid ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):visited,
 footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary),
 footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):link,
 footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):visited {
@@ -778,11 +781,14 @@ footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):visited {
   display: inline-block;
 }
 
+footer .footer-inner .grid ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):hover,
 footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):hover {
   color: var(--cursy-cyan);
   text-decoration: none;
 }
 
+footer .footer-inner .grid ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):active,
+footer .footer-inner .grid ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):focus,
 footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):active,
 footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):focus {
   color: var(--cursy-cyan);
