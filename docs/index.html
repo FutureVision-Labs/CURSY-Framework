@@ -367,6 +367,59 @@
               <a href="#" class="pagination-link">*Next*</a>
             </div>
           </div>
+          <div class="card">
+            <h3>Modals</h3>
+            <p>Overlay dialogs with backdrop blur and smooth animations</p>
+            <div style="margin-top: 1rem;">
+              <button onclick="document.getElementById('demo-modal-overlay').classList.add('active')" class="btn-primary">Open Modal</button>
+            </div>
+            <div id="demo-modal-overlay" class="modal-overlay" onclick="this.classList.remove('active')">
+              <div class="modal" onclick="event.stopPropagation()">
+                <div class="modal-header">
+                  <h3 class="modal-title">Modal Title</h3>
+                  <button class="modal-close" onclick="document.getElementById('demo-modal-overlay').classList.remove('active')">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal content goes here. Click outside or the X button to close.</p>
+                </div>
+                <div class="modal-footer">
+                  <button onclick="document.getElementById('demo-modal-overlay').classList.remove('active')" class="btn-primary">Close</button>
+                </div>
+              </div>
+            </div>
+            <style>
+              .modal-footer {
+                margin-top: var(--spacing-lg);
+                display: flex;
+                justify-content: flex-end;
+                gap: var(--spacing-md);
+              }
+            </style>
+          </div>
+          <div class="card">
+            <h3>Dropdowns</h3>
+            <p>Animated dropdown menus with smooth transitions</p>
+            <div class="dropdown" style="margin-top: 1rem;">
+              <button class="dropdown-trigger" onclick="event.preventDefault(); event.stopPropagation(); this.closest('.dropdown').classList.toggle('active')">Select Option</button>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Option 1</a>
+                <a href="#" class="dropdown-item">Option 2</a>
+                <a href="#" class="dropdown-item">Option 3</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">More Options</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Tooltips</h3>
+            <p>Contextual help text that appears on hover</p>
+            <div style="margin-top: 1rem; text-align: center;">
+              <span class="tooltip">
+                <button class="btn-ghost">Hover Me</button>
+                <span class="tooltip-text">This is a tooltip! Hover to see more info.</span>
+              </span>
+            </div>
+          </div>
         </div>
         <div style="text-align: center; margin-top: 2rem;">
           <a href="COMPONENTS.md" class="btn-primary">*View All Components* 📚</a>
