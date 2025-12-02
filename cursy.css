@@ -343,13 +343,31 @@ a.btn-primary {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Ensure button color applies to all states when it's an anchor */
-a.btn-primary,
-a.btn-primary:link,
-a.btn-primary:visited,
-a.btn-primary:hover,
-a.btn-primary:active,
-a.btn-primary:focus {
+/* Ensure button color applies to all states when it's an anchor - but NOT in footer (footer has its own styles) */
+a.btn-primary:not(footer a),
+a.btn-primary:not(footer a):link,
+a.btn-primary:not(footer a):visited,
+a.btn-primary:not(footer a):hover,
+a.btn-primary:not(footer a):active,
+a.btn-primary:not(footer a):focus,
+.card a.btn-primary:not(footer a),
+.card a.btn-primary:not(footer a):link,
+.card a.btn-primary:not(footer a):visited,
+.card a.btn-primary:not(footer a):hover,
+.card a.btn-primary:not(footer a):active,
+.card a.btn-primary:not(footer a):focus,
+section a.btn-primary:not(footer a),
+section a.btn-primary:not(footer a):link,
+section a.btn-primary:not(footer a):visited,
+section a.btn-primary:not(footer a):hover,
+section a.btn-primary:not(footer a):active,
+section a.btn-primary:not(footer a):focus,
+main a.btn-primary:not(footer a),
+main a.btn-primary:not(footer a):link,
+main a.btn-primary:not(footer a):visited,
+main a.btn-primary:not(footer a):hover,
+main a.btn-primary:not(footer a):active,
+main a.btn-primary:not(footer a):focus {
   color: var(--cursy-slate-900);
 }
 
@@ -719,18 +737,15 @@ footer ul li {
   margin-bottom: 0.5rem;
 }
 
-footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary) {
+/* Footer link styles - MUST come after button styles to ensure proper styling */
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary),
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):link,
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):visited {
   color: var(--cursy-slate-400);
   text-decoration: none;
   font-size: 0.85rem;
   transition: color 0.2s ease;
   display: inline-block;
-}
-
-footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):link,
-footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):visited {
-  color: var(--cursy-slate-400);
-  text-decoration: none;
 }
 
 footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):hover {
