@@ -640,18 +640,26 @@ footer {
 
 .form-checkbox-label,
 .form-radio-label {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   font-size: 0.85rem;
   color: var(--cursy-slate-300);
   cursor: pointer;
   user-select: none;
+  width: auto;
+  max-width: 100%;
 }
 
 .form-checkbox-label .form-switch,
 .form-radio-label .form-switch {
   flex-shrink: 0;
+}
+
+.card .form-checkbox-label,
+.card .form-radio-label {
+  display: inline-flex;
+  width: auto;
 }
 
 .form-help {
