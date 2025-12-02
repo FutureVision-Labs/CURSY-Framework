@@ -730,6 +730,30 @@ footer ul li::marker {
 }
 
 /* ============================================
+   GLOBAL LINK STYLES - Applied AFTER nav/footer to override defaults
+   ============================================ */
+
+/* Target all links in content areas (p, .card, main, section, etc.) */
+p a,
+.card a,
+main a:not(nav a):not(footer a),
+section a:not(nav a):not(footer a),
+article a:not(nav a):not(footer a),
+div a:not(nav a):not(footer a):not(.dropdown-trigger):not(.dropdown-item):not(.btn-primary):not(.btn-ghost):not(.btn-secondary):not(.pagination-link):not(.breadcrumb-item a) {
+  color: var(--cursy-cyan) !important;
+  text-decoration: none !important;
+}
+
+p a:hover,
+.card a:hover,
+main a:not(nav a):not(footer a):hover,
+section a:not(nav a):not(footer a):hover {
+  color: var(--cursy-green) !important;
+  text-decoration: underline !important;
+  text-decoration-color: var(--cursy-green) !important;
+}
+
+/* ============================================
    FORMS
    ============================================ */
 
