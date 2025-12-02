@@ -342,6 +342,61 @@
   background: linear-gradient(90deg, #ef4444, #dc2626);
 }
 
+/* Progress Bar Sizes */
+.progress-sm {
+  height: 0.25rem;
+}
+
+.progress-lg {
+  height: 0.75rem;
+}
+
+.progress-xl {
+  height: 1rem;
+}
+
+/* Progress Bar Colors */
+.progress-bar-purple {
+  background: linear-gradient(90deg, var(--cursy-purple), #9333ea);
+}
+
+.progress-bar-info {
+  background: linear-gradient(90deg, var(--cursy-cyan), #06b6d4);
+}
+
+/* Animated Progress Bars */
+.progress-bar-animated {
+  background: linear-gradient(90deg, var(--cursy-green), var(--cursy-cyan));
+  background-size: 200% 100%;
+  animation: progress-shimmer 2s linear infinite;
+}
+
+@keyframes progress-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.progress-bar-striped {
+  background: linear-gradient(90deg, var(--cursy-green), var(--cursy-cyan));
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 1rem 1rem;
+  animation: progress-striped 1s linear infinite;
+}
+
+@keyframes progress-striped {
+  0% { background-position: 1rem 0; }
+  100% { background-position: 0 0; }
+}
+
 /* ============================================
    LOADING SPINNERS
    ============================================ */
