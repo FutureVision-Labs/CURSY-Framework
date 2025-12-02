@@ -142,7 +142,8 @@ h3 {
    LINKS - Global Styling
    ============================================ */
 
-a {
+/* Base link styles - applied to ALL links except nav, footer, buttons, and components */
+a:not(nav a):not(footer a):not(.dropdown-trigger):not(.dropdown-item):not(.btn-primary):not(.btn-ghost):not(.btn-secondary):not(.pagination-link):not(.breadcrumb-item a) {
   color: var(--cursy-cyan) !important;
   text-decoration: none !important;
   transition: color 0.2s ease, text-decoration 0.2s ease;
@@ -151,21 +152,21 @@ a {
   background: transparent !important;
 }
 
-a:link,
-a:visited {
+a:not(nav a):not(footer a):not(.dropdown-trigger):not(.dropdown-item):not(.btn-primary):not(.btn-ghost):not(.btn-secondary):not(.pagination-link):not(.breadcrumb-item a):link,
+a:not(nav a):not(footer a):not(.dropdown-trigger):not(.dropdown-item):not(.btn-primary):not(.btn-ghost):not(.btn-secondary):not(.pagination-link):not(.breadcrumb-item a):visited {
   color: var(--cursy-cyan) !important;
   text-decoration: none !important;
 }
 
-a:hover {
+a:not(nav a):not(footer a):not(.dropdown-trigger):not(.dropdown-item):not(.btn-primary):not(.btn-ghost):not(.btn-secondary):not(.pagination-link):not(.breadcrumb-item a):hover {
   color: var(--cursy-green) !important;
   text-decoration: underline !important;
   text-decoration-color: var(--cursy-green) !important;
   text-underline-offset: 2px;
 }
 
-a:active,
-a:focus {
+a:not(nav a):not(footer a):not(.dropdown-trigger):not(.dropdown-item):not(.btn-primary):not(.btn-ghost):not(.btn-secondary):not(.pagination-link):not(.breadcrumb-item a):active,
+a:not(nav a):not(footer a):not(.dropdown-trigger):not(.dropdown-item):not(.btn-primary):not(.btn-ghost):not(.btn-secondary):not(.pagination-link):not(.breadcrumb-item a):focus {
   color: var(--cursy-green) !important;
   text-decoration: underline !important;
   text-decoration-color: var(--cursy-green) !important;
