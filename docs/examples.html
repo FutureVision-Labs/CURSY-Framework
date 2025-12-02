@@ -60,64 +60,7 @@
   </div>
 </header>
 
-<script>
-// Dropdown functionality
-document.addEventListener('DOMContentLoaded', function() {
-  const dropdowns = document.querySelectorAll('.dropdown');
-  
-  dropdowns.forEach(dropdown => {
-    const trigger = dropdown.querySelector('.dropdown-trigger');
-    
-    trigger.addEventListener('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      
-      // Close other dropdowns
-      dropdowns.forEach(d => {
-        if (d !== dropdown) {
-          d.classList.remove('active');
-        }
-      });
-      
-      // Toggle this dropdown
-      dropdown.classList.toggle('active');
-    });
-  });
-  
-  // Close dropdowns when clicking outside
-  document.addEventListener('click', function(e) {
-    if (!e.target.closest('.dropdown')) {
-      dropdowns.forEach(d => d.classList.remove('active'));
-    }
-  });
-  
-  // Tab functionality
-  const tabs = document.querySelectorAll('.tab');
-  tabs.forEach(tab => {
-    tab.addEventListener('click', function() {
-      const tabId = this.getAttribute('data-tab');
-      const tabsContainer = this.closest('.tabs');
-      const card = this.closest('.card');
-      
-      // Remove active class from all tabs in this container
-      tabsContainer.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-      // Add active class to clicked tab
-      this.classList.add('active');
-      
-      // Hide all tab contents in this card
-      card.querySelectorAll('.tab-content').forEach(content => {
-        content.classList.remove('active');
-      });
-      
-      // Show the selected tab content
-      const tabContent = card.querySelector('#' + tabId);
-      if (tabContent) {
-        tabContent.classList.add('active');
-      }
-    });
-  });
-});
-</script>
+<!-- CURSY Framework is a ZERO JavaScript framework! Everything works with pure CSS. -->
     
     <main>
       <section>
