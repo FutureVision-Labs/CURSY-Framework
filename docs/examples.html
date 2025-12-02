@@ -467,7 +467,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <p>Animated dropdown menus with smooth transitions</p>
             <div style="margin-top: 1.5rem; display: flex; gap: 1.5rem; flex-wrap: wrap; position: relative;">
               <div class="dropdown" style="position: relative; z-index: 100;">
-                <button class="dropdown-trigger" onclick="event.preventDefault(); event.stopPropagation(); this.closest('.dropdown').classList.toggle('active')">Select Option</button>
+                <a href="#" class="dropdown-trigger">Select Option</a>
                 <div class="dropdown-menu" style="z-index: 1000;">
                   <a href="#" class="dropdown-item">Option 1</a>
                   <a href="#" class="dropdown-item">Option 2</a>
@@ -477,7 +477,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
               </div>
               <div class="dropdown" style="position: relative; z-index: 100;">
-                <button class="dropdown-trigger" onclick="event.preventDefault(); event.stopPropagation(); this.closest('.dropdown').classList.toggle('active')">Multilevel Menu</button>
+                <a href="#" class="dropdown-trigger">Multilevel Menu</a>
                 <div class="dropdown-menu" style="z-index: 1000;">
                   <a href="#" class="dropdown-item">Simple Item</a>
                   <div class="dropdown-item has-submenu">

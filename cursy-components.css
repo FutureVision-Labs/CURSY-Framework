@@ -146,10 +146,17 @@
   border-radius: 0.5rem;
   color: var(--cursy-slate-200);
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   transition: all 0.2s ease;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+button.dropdown-trigger {
+  font-family: inherit;
+  font-size: 0.9rem;
 }
 
 .dropdown-trigger::after {
