@@ -25,6 +25,21 @@
   box-sizing: border-box;
 }
 
+/* Override reset for footer lists immediately */
+footer ul,
+footer .footer-inner ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li,
+footer .footer-inner ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 0;
+  list-style: none;
+}
+
 :root {
   /* Color Palette */
   --cursy-green: #22c55e;
