@@ -670,10 +670,17 @@ button.dropdown-trigger {
 
 .accordion-item {
   border-bottom: 1px solid rgba(30, 64, 175, 0.5);
+  position: relative;
 }
 
 .accordion-item:last-child {
   border-bottom: none;
+}
+
+.accordion-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .accordion-header {
@@ -684,6 +691,7 @@ button.dropdown-trigger {
   justify-content: space-between;
   align-items: center;
   transition: background 0.2s ease;
+  user-select: none;
 }
 
 .accordion-header:hover {
@@ -703,7 +711,7 @@ button.dropdown-trigger {
   transition: transform 0.2s ease;
 }
 
-.accordion-item.active .accordion-icon {
+.accordion-input:checked + .accordion-header .accordion-icon {
   transform: rotate(180deg);
 }
 
@@ -716,6 +724,15 @@ button.dropdown-trigger {
 .accordion-body {
   padding: 1rem 1.25rem;
   color: var(--cursy-slate-300);
+}
+
+.accordion-input:checked ~ .accordion-content {
+  max-height: 1000px;
+}
+
+/* Legacy support - keep .active class working */
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg);
 }
 
 .accordion-item.active .accordion-content {
