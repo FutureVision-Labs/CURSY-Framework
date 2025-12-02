@@ -645,15 +645,33 @@ footer ul {
   list-style: none !important;
   padding-left: 0 !important;
   margin-left: 0 !important;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 footer ul li {
   margin-bottom: 0.5rem;
   padding-left: 0;
+  list-style: none;
 }
 
-footer ul li::before {
-  display: none;
+footer ul li::before,
+footer ul li::marker {
+  display: none !important;
+  content: none !important;
+}
+
+/* Footer responsive - keep 3 columns on larger screens */
+@media (max-width: 900px) {
+  footer .grid.grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  footer .grid.grid-3 {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ============================================
