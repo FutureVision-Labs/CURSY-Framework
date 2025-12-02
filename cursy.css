@@ -343,31 +343,31 @@ a.btn-primary {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Ensure button color applies to all states when it's an anchor - but NOT in footer (footer has its own styles) */
-a.btn-primary:not(footer a),
-a.btn-primary:not(footer a):link,
-a.btn-primary:not(footer a):visited,
-a.btn-primary:not(footer a):hover,
-a.btn-primary:not(footer a):active,
-a.btn-primary:not(footer a):focus,
-.card a.btn-primary:not(footer a),
-.card a.btn-primary:not(footer a):link,
-.card a.btn-primary:not(footer a):visited,
-.card a.btn-primary:not(footer a):hover,
-.card a.btn-primary:not(footer a):active,
-.card a.btn-primary:not(footer a):focus,
-section a.btn-primary:not(footer a),
-section a.btn-primary:not(footer a):link,
-section a.btn-primary:not(footer a):visited,
-section a.btn-primary:not(footer a):hover,
-section a.btn-primary:not(footer a):active,
-section a.btn-primary:not(footer a):focus,
-main a.btn-primary:not(footer a),
-main a.btn-primary:not(footer a):link,
-main a.btn-primary:not(footer a):visited,
-main a.btn-primary:not(footer a):hover,
-main a.btn-primary:not(footer a):active,
-main a.btn-primary:not(footer a):focus {
+/* Ensure button color applies to all states when it's an anchor */
+a.btn-primary,
+a.btn-primary:link,
+a.btn-primary:visited,
+a.btn-primary:hover,
+a.btn-primary:active,
+a.btn-primary:focus,
+.card a.btn-primary,
+.card a.btn-primary:link,
+.card a.btn-primary:visited,
+.card a.btn-primary:hover,
+.card a.btn-primary:active,
+.card a.btn-primary:focus,
+section a.btn-primary,
+section a.btn-primary:link,
+section a.btn-primary:visited,
+section a.btn-primary:hover,
+section a.btn-primary:active,
+section a.btn-primary:focus,
+main a.btn-primary,
+main a.btn-primary:link,
+main a.btn-primary:visited,
+main a.btn-primary:hover,
+main a.btn-primary:active,
+main a.btn-primary:focus {
   color: var(--cursy-slate-900);
 }
 
