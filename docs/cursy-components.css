@@ -277,6 +277,8 @@ button.dropdown-trigger {
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.1), transparent);
   transition: left 0.5s ease;
+  pointer-events: none;
+  z-index: -1;
 }
 
 .dropdown:hover .dropdown-menu::before,
