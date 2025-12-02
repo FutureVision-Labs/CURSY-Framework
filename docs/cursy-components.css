@@ -209,9 +209,16 @@ button.dropdown-trigger {
   margin: 0.5rem 0;
 }
 
-/* Multilevel Dropdowns */
+/* Multilevel Dropdowns - Pure CSS hover */
 .dropdown-item.has-submenu {
   position: relative;
+}
+
+.dropdown-item.has-submenu:hover .dropdown-submenu,
+.dropdown-item.has-submenu:focus-within .dropdown-submenu {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateX(0);
 }
 
 .dropdown-item.has-submenu::after {

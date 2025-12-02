@@ -52,9 +52,20 @@
   display: none;
 }
 
-.tab-input:checked ~ .tab-content {
+/* Pure CSS tabs - show content when corresponding radio is checked */
+#tab-demo-1:checked ~ #content-demo-1,
+#tab-demo-2:checked ~ #content-demo-2,
+#tab-demo-3:checked ~ #content-demo-3 {
   display: block;
 }
+
+/* Generic pattern - use this structure for custom tabs:
+   <input type="radio" name="unique-name" id="tab-id" class="tab-input" />
+   <label for="tab-id" class="tab-label">Tab Text</label>
+   <div class="tab-content" id="content-id">Content</div>
+   
+   Then add CSS: #tab-id:checked ~ #content-id { display: block; }
+*/
 
 /* Legacy support - keep .tab class working */
 .tab {
@@ -260,6 +271,25 @@ button.dropdown-trigger {
   transition: left 0.5s ease;
 }
 
+/* Pure CSS dropdown - show on hover */
+.dropdown:hover .dropdown-menu::before,
+.dropdown:focus-within .dropdown-menu::before {
+  left: 100%;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0) scale(1);
+}
+
+.dropdown:hover .dropdown-trigger::after,
+.dropdown:focus-within .dropdown-trigger::after {
+  transform: rotate(180deg);
+}
+
+/* Legacy support - keep .active class working */
 .dropdown.active .dropdown-menu::before {
   left: 100%;
 }
@@ -268,6 +298,10 @@ button.dropdown-trigger {
   opacity: 1;
   pointer-events: all;
   transform: translateY(0) scale(1);
+}
+
+.dropdown.active .dropdown-trigger::after {
+  transform: rotate(180deg);
 }
 
 .dropdown-item {
@@ -309,9 +343,16 @@ button.dropdown-trigger {
   margin: 0.5rem 0;
 }
 
-/* Multilevel Dropdowns */
+/* Multilevel Dropdowns - Pure CSS hover */
 .dropdown-item.has-submenu {
   position: relative;
+}
+
+.dropdown-item.has-submenu:hover .dropdown-submenu,
+.dropdown-item.has-submenu:focus-within .dropdown-submenu {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateX(0);
 }
 
 .dropdown-item.has-submenu::after {
