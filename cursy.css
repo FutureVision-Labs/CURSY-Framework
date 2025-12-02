@@ -767,29 +767,6 @@ footer ul li::marker {
   content: none;
 }
 
-/* Footer link styles - MUST be at the very end to override everything */
-footer ul li a,
-footer ul li a:link,
-footer ul li a:visited {
-  color: var(--cursy-slate-400);
-  text-decoration: none;
-  font-size: 0.85rem;
-  transition: color 0.2s ease;
-  display: inline-block;
-}
-
-footer ul li a:hover {
-  color: var(--cursy-cyan);
-  text-decoration: none;
-}
-
-footer ul li a:active,
-footer ul li a:focus {
-  color: var(--cursy-cyan);
-  text-decoration: none;
-  outline: 1px solid var(--cursy-cyan);
-  outline-offset: 2px;
-}
 
 /* Footer general text styling */
 footer p {
@@ -1144,5 +1121,29 @@ footer h3 {
   nav ul {
     display: none;
   }
+}
+
+/* Footer link styles - MUST be at the absolute end of the file */
+footer ul li a,
+footer ul li a:link,
+footer ul li a:visited {
+  color: var(--cursy-slate-400);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s ease;
+  display: inline-block;
+}
+
+footer ul li a:hover {
+  color: var(--cursy-cyan);
+  text-decoration: none;
+}
+
+footer ul li a:active,
+footer ul li a:focus {
+  color: var(--cursy-cyan);
+  text-decoration: none;
+  outline: 1px solid var(--cursy-cyan);
+  outline-offset: 2px;
 }
 
