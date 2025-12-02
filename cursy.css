@@ -741,18 +741,6 @@ footer h4 {
   margin-bottom: var(--spacing-md);
 }
 
-footer ul {
-  list-style-type: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-footer ul li {
-  margin-bottom: 0.5rem !important;
-  padding-left: 0 !important;
-  list-style-type: none !important;
-}
-
 footer .grid {
   margin-bottom: var(--spacing-xl);
 }
