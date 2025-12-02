@@ -231,6 +231,10 @@ button.dropdown-trigger {
   background: rgba(34, 211, 238, 0.1);
 }
 
+.dropdown {
+  position: relative;
+}
+
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -248,7 +252,7 @@ button.dropdown-trigger {
   transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
               transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
               pointer-events 0.3s ease;
-  z-index: 50;
+  z-index: 1000;
   overflow: visible;
 }
 
@@ -297,11 +301,11 @@ button.dropdown-trigger {
   content: '';
   position: absolute;
   top: 0;
-  left: -100%;
-  width: 100%;
+  left: -20px;
+  width: 20px;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.1), transparent);
-  transition: left 0.5s ease;
+  background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.08), transparent);
+  transition: left 0.3s ease;
   pointer-events: none;
   z-index: -1;
 }
@@ -309,7 +313,7 @@ button.dropdown-trigger {
 /* Pure CSS dropdown - show on hover */
 .dropdown:hover .dropdown-menu::before,
 .dropdown:focus-within .dropdown-menu::before {
-  left: 100%;
+  left: calc(100% + 20px);
 }
 
 .dropdown:hover .dropdown-menu,
@@ -326,7 +330,7 @@ button.dropdown-trigger {
 
 /* Legacy support - keep .active class working */
 .dropdown.active .dropdown-menu::before {
-  left: 100%;
+  left: calc(100% + 20px);
 }
 
 .dropdown.active .dropdown-menu {
