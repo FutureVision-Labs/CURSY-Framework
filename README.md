@@ -146,7 +146,7 @@ CURSY Framework is part of the Imaginatorium ecosystem — where every design de
 ---
 
 **Version**: *v4.20a* 🚗  
-**License**: *MIT* (for FutureVision projects) 📜  
+**License**: *FREE for EVERYONE* 📜  
 **Maintained by**: *Team DC / FutureVision Labs* 💖  
 **Built for**: *Mini-Cursy · The Imaginatorium* 🏛️
 
