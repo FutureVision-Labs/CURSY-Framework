@@ -58,38 +58,7 @@
   </div>
 </header>
 
-<script>
-// Dropdown functionality
-document.addEventListener('DOMContentLoaded', function() {
-  const dropdowns = document.querySelectorAll('.dropdown');
-  
-  dropdowns.forEach(dropdown => {
-    const trigger = dropdown.querySelector('.dropdown-trigger');
-    
-    trigger.addEventListener('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      
-      // Close other dropdowns
-      dropdowns.forEach(d => {
-        if (d !== dropdown) {
-          d.classList.remove('active');
-        }
-      });
-      
-      // Toggle this dropdown
-      dropdown.classList.toggle('active');
-    });
-  });
-  
-  // Close dropdowns when clicking outside
-  document.addEventListener('click', function(e) {
-    if (!e.target.closest('.dropdown')) {
-      dropdowns.forEach(d => d.classList.remove('active'));
-    }
-  });
-});
-</script>
+<!-- CURSY Framework is a ZERO JavaScript framework! Everything works with pure CSS. -->
 
 
     
@@ -102,23 +71,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
       <section>
         <h2 class="section-title">Installation</h2>
-        <div class="grid grid-2">
-          <div class="card">
-            <h3>1. Download the Framework</h3>
-            <p>Copy the CSS files to your project or link directly:</p>
-            <div class="code-block">
-<code>&lt;link rel="stylesheet" href="path/to/cursy.css" /&gt;</code>
-            </div>
+        
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <h3>🚀 Option 1: CDN (Recommended - No Download Needed!)</h3>
+          <p>Use jsDelivr CDN to include CURSY Framework directly from GitHub:</p>
+          <div class="code-block">
+<code>&lt;!-- Google Fonts --&gt;
+&lt;link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" /&gt;
+
+&lt;!-- CURSY Framework - Full Version --&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FutureVision-Labs/CURSY-Framework@main/cursy.css" /&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FutureVision-Labs/CURSY-Framework@main/cursy-utilities.css" /&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FutureVision-Labs/CURSY-Framework@main/cursy-components.css" /&gt;
+
+&lt;!-- OR use bundled version --&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FutureVision-Labs/CURSY-Framework@main/cursy-full.css" /&gt;</code>
           </div>
-          <div class="card">
-            <h3>2. Include Google Fonts</h3>
-            <div class="code-block">
-<code>&lt;link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" /&gt;</code>
-            </div>
+          <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--cursy-slate-400);">
+            <strong>Benefits:</strong> Always up-to-date, no local files needed, fast global CDN delivery
+          </p>
+        </div>
+
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <h3>📦 Option 2: Local Installation</h3>
+          <p>Download the CSS files and include them locally:</p>
+          <div class="code-block">
+<code>&lt;link rel="stylesheet" href="path/to/cursy.css" /&gt;
+&lt;link rel="stylesheet" href="path/to/cursy-utilities.css" /&gt;
+&lt;link rel="stylesheet" href="path/to/cursy-components.css" /&gt;</code>
           </div>
         </div>
-        <div class="card" style="margin-top: 1rem;">
-          <h3>3. Add Scanlines Effect (Optional)</h3>
+
+        <div class="card">
+          <h3>✨ Add Scanlines Effect (Optional)</h3>
           <div class="code-block">
 <code>&lt;body class="scanlines"&gt;</code>
           </div>
@@ -136,7 +121,10 @@ document.addEventListener('DOMContentLoaded', function() {
   &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
   &lt;title&gt;My CURSY Project&lt;/title&gt;
   &lt;link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" /&gt;
-  &lt;link rel="stylesheet" href="cursy.css"&gt;
+  &lt;!-- CDN Version --&gt;
+  &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FutureVision-Labs/CURSY-Framework@main/cursy.css" /&gt;
+  &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FutureVision-Labs/CURSY-Framework@main/cursy-utilities.css" /&gt;
+  &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FutureVision-Labs/CURSY-Framework@main/cursy-components.css" /&gt;
 &lt;/head&gt;
 &lt;body class="scanlines"&gt;
   &lt;div class="page"&gt;

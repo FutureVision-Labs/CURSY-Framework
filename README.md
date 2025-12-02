@@ -30,7 +30,35 @@ CURSY Framework is NOT another generic purple-gradient AI design. It's a careful
 
 ## 🚀 Quick Start
 
-### *Basic Version* (Components Only)
+### *Via CDN* (Recommended - No Download Needed!)
+
+**jsDelivr CDN** - Automatically served from GitHub:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My CURSY Project</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <!-- CURSY Framework - Full Version -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FutureVision-Labs/CURSY-Framework@main/cursy.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FutureVision-Labs/CURSY-Framework@main/cursy-utilities.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FutureVision-Labs/CURSY-Framework@main/cursy-components.css" />
+</head>
+<body class="scanlines">
+```
+
+**Or use the bundled version:**
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FutureVision-Labs/CURSY-Framework@main/cursy-full.css" />
+```
+
+### *Local Installation* (Download Files)
+
+**Basic Version** (Components Only):
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -42,7 +70,7 @@ CURSY Framework is NOT another generic purple-gradient AI design. It's a careful
 <body class="scanlines">
 ```
 
-### *Full Version* (Components + Utilities + More)
+**Full Version** (Components + Utilities + More):
 ```html
 <!DOCTYPE html>
 <html lang="en">
