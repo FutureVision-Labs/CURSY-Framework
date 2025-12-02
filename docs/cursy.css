@@ -738,30 +738,6 @@ footer ul li {
   margin-bottom: 0.5rem;
 }
 
-/* Footer link styles - MUST come after button styles to ensure proper styling */
-footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary),
-footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):link,
-footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):visited {
-  color: var(--cursy-slate-400);
-  text-decoration: none;
-  font-size: 0.85rem;
-  transition: color 0.2s ease;
-  display: inline-block;
-}
-
-footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):hover {
-  color: var(--cursy-cyan);
-  text-decoration: none;
-}
-
-footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):active,
-footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):focus {
-  color: var(--cursy-cyan);
-  text-decoration: none;
-  outline: 1px solid var(--cursy-cyan);
-  outline-offset: 2px;
-}
-
 footer .grid {
   margin-bottom: var(--spacing-xl);
 }
@@ -789,6 +765,30 @@ footer ul li::before,
 footer ul li::marker {
   display: none;
   content: none;
+}
+
+/* Footer link styles - MUST be at the very end to override everything */
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary),
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):link,
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):visited {
+  color: var(--cursy-slate-400);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s ease;
+  display: inline-block;
+}
+
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):hover {
+  color: var(--cursy-cyan);
+  text-decoration: none;
+}
+
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):active,
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):focus {
+  color: var(--cursy-cyan);
+  text-decoration: none;
+  outline: 1px solid var(--cursy-cyan);
+  outline-offset: 2px;
 }
 
 /* Footer responsive - keep 3 columns on larger screens */
