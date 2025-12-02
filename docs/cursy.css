@@ -646,6 +646,12 @@ footer {
   font-size: 0.85rem;
   color: var(--cursy-slate-300);
   cursor: pointer;
+  user-select: none;
+}
+
+.form-checkbox-label .form-switch,
+.form-radio-label .form-switch {
+  flex-shrink: 0;
 }
 
 .form-help {
