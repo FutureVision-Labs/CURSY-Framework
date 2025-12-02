@@ -625,6 +625,7 @@ footer ul li a {
   text-decoration: none;
   font-size: 0.85rem;
   transition: color 0.2s ease;
+  display: inline-block;
 }
 
 footer ul li a:hover {
@@ -633,6 +634,10 @@ footer ul li a:hover {
 
 footer .grid {
   margin-bottom: var(--spacing-xl);
+}
+
+footer .grid > div {
+  padding: 0 var(--spacing-md);
 }
 
 /* ============================================
