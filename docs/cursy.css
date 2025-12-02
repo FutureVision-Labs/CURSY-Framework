@@ -323,15 +323,17 @@ nav a:hover::after {
   box-shadow: var(--shadow-md);
   position: relative;
   overflow: hidden;
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg) !important;
 }
 
 .card:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
-.grid .card {
-  margin-bottom: 0;
+.grid .card,
+.grid-2 .card,
+.grid-3 .card {
+  margin-bottom: 0 !important;
 }
 
 .card::before {
