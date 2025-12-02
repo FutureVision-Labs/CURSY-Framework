@@ -81,11 +81,23 @@ body {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-  background-size: 100% 3px;
-  mix-blend-mode: soft-light;
-  opacity: 0.7;
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.03) 0px,
+    transparent 1px,
+    transparent 2px,
+    rgba(255, 255, 255, 0.03) 3px
+  );
+  background-size: 100% 4px;
+  mix-blend-mode: overlay;
+  opacity: 0.8;
   z-index: 1;
+  animation: scanlines-move 8s linear infinite;
+}
+
+@keyframes scanlines-move {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 4px; }
 }
 
 .page {
