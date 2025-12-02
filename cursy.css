@@ -28,7 +28,7 @@
 /* Override reset for footer lists immediately */
 footer ul,
 footer .footer-inner ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
@@ -37,7 +37,7 @@ footer ul li,
 footer .footer-inner ul li {
   margin-bottom: 0.5rem;
   padding-left: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 :root {
@@ -747,7 +747,7 @@ footer ul,
 footer .footer-inner ul,
 footer .grid ul,
 footer .grid .footer-inner ul {
-  list-style: none !important;
+  list-style-type: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
@@ -758,7 +758,7 @@ footer .grid ul li,
 footer .grid .footer-inner ul li {
   margin-bottom: 0.5rem !important;
   padding-left: 0 !important;
-  list-style: none !important;
+  list-style-type: none !important;
 }
 
 footer .grid {
@@ -1129,7 +1129,7 @@ footer h3 {
 /* FOOTER STYLES - MUST BE AT THE ABSOLUTE END - MATCH EXACT HTML STRUCTURE */
 footer .footer-inner ul,
 footer ul {
-  list-style: none !important;
+  list-style-type: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
@@ -1138,7 +1138,7 @@ footer .footer-inner ul li,
 footer ul li {
   margin-bottom: 0.5rem !important;
   padding-left: 0 !important;
-  list-style: none !important;
+  list-style-type: none !important;
 }
 
 footer .footer-inner ul li::before,
