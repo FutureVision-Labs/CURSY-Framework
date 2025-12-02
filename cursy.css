@@ -812,16 +812,6 @@ footer h3 {
   font-weight: 600;
 }
 
-footer a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary) {
-  color: var(--cursy-slate-400);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-footer a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):hover {
-  color: var(--cursy-cyan);
-  text-decoration: underline;
-}
 
 /* Footer responsive - keep 3 columns on larger screens */
 @media (max-width: 900px) {
