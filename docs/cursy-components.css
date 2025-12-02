@@ -9,13 +9,62 @@
    TABS
    ============================================ */
 
+.tabs-wrapper {
+  position: relative;
+}
+
 .tabs {
   display: flex;
   border-bottom: 1px solid rgba(30, 64, 175, 0.7);
   margin-bottom: var(--spacing-lg);
   overflow-x: auto;
+  position: relative;
 }
 
+.tab-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tab-label {
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--cursy-slate-400);
+  font-family: var(--font-orbitron);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.tab-label:hover {
+  color: var(--cursy-slate-200);
+}
+
+.tab-input:checked + .tab-label {
+  color: var(--cursy-cyan);
+  border-bottom-color: var(--cursy-cyan);
+}
+
+.tab-content {
+  display: none;
+}
+
+/* Pure CSS tabs - show content when corresponding radio is checked */
+/* Use :has() selector (modern browsers) */
+.tabs-wrapper:has(#tab-demo-1:checked) #content-demo-1,
+.tabs-wrapper:has(#tab-demo-2:checked) #content-demo-2,
+.tabs-wrapper:has(#tab-demo-3:checked) #content-demo-3 {
+  display: block;
+}
+
+/* Legacy support - keep .tab class working */
 .tab {
   padding: 0.75rem 1.5rem;
   background: transparent;
@@ -38,10 +87,6 @@
 .tab.active {
   color: var(--cursy-cyan);
   border-bottom-color: var(--cursy-cyan);
-}
-
-.tab-content {
-  display: none;
 }
 
 .tab-content.active {
