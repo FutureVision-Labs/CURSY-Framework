@@ -381,7 +381,7 @@ nav a:hover::after {
 }
 
 .grid-3 {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-2 {
@@ -823,6 +823,10 @@ footer {
 
   .hero-car {
     order: -1;
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .nav-inner {
