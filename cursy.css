@@ -592,10 +592,47 @@ section {
 footer {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--spacing-lg) var(--spacing-2xl);
-  font-size: 0.7rem;
-  color: var(--cursy-slate-500);
-  text-align: center;
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  border-top: 1px solid rgba(30, 64, 175, 0.5);
+  margin-top: var(--spacing-3xl);
+}
+
+.footer-inner {
+  width: 100%;
+}
+
+footer h4 {
+  font-family: var(--font-orbitron);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--cursy-slate-200);
+  margin-bottom: var(--spacing-md);
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+  color: var(--cursy-slate-400);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s ease;
+}
+
+footer ul li a:hover {
+  color: var(--cursy-cyan);
+}
+
+footer .grid {
+  margin-bottom: var(--spacing-xl);
 }
 
 /* ============================================
