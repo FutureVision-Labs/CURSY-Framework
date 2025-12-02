@@ -321,7 +321,8 @@ nav a:hover::after {
    BUTTONS
    ============================================ */
 
-.btn-primary {
+.btn-primary,
+a.btn-primary {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
@@ -340,6 +341,16 @@ nav a:hover::after {
   position: relative;
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Ensure button color applies to all states when it's an anchor */
+a.btn-primary,
+a.btn-primary:link,
+a.btn-primary:visited,
+a.btn-primary:hover,
+a.btn-primary:active,
+a.btn-primary:focus {
+  color: var(--cursy-slate-900);
 }
 
 
