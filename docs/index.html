@@ -396,13 +396,13 @@
               }
             </style>
           </div>
-          <div class="card" style="min-height: 280px; overflow: visible;">
+          <div class="card" style="min-height: 320px; overflow: visible !important; position: relative; z-index: 1;">
             <h3>Dropdowns</h3>
             <p>Animated dropdown menus with smooth transitions and multilevel support</p>
-            <div style="margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-              <div class="dropdown">
+            <div style="margin-top: 1.5rem; display: flex; gap: 1.5rem; flex-wrap: wrap; position: relative;">
+              <div class="dropdown" style="position: relative; z-index: 100;">
                 <button class="dropdown-trigger" onclick="event.preventDefault(); event.stopPropagation(); this.closest('.dropdown').classList.toggle('active')">Select Option</button>
-                <div class="dropdown-menu">
+                <div class="dropdown-menu" style="z-index: 1000;">
                   <a href="#" class="dropdown-item">Option 1</a>
                   <a href="#" class="dropdown-item">Option 2</a>
                   <a href="#" class="dropdown-item">Option 3</a>
@@ -410,13 +410,13 @@
                   <a href="#" class="dropdown-item">More Options</a>
                 </div>
               </div>
-              <div class="dropdown">
+              <div class="dropdown" style="position: relative; z-index: 100;">
                 <button class="dropdown-trigger" onclick="event.preventDefault(); event.stopPropagation(); this.closest('.dropdown').classList.toggle('active')">Multilevel Menu</button>
-                <div class="dropdown-menu">
+                <div class="dropdown-menu" style="z-index: 1000;">
                   <a href="#" class="dropdown-item">Simple Item</a>
                   <div class="dropdown-item has-submenu">
                     Products
-                    <div class="dropdown-submenu">
+                    <div class="dropdown-submenu" style="z-index: 1001;">
                       <a href="#" class="dropdown-item">Web Apps</a>
                       <a href="#" class="dropdown-item">Mobile Apps</a>
                       <a href="#" class="dropdown-item">Desktop Apps</a>
@@ -424,7 +424,7 @@
                   </div>
                   <div class="dropdown-item has-submenu">
                     Services
-                    <div class="dropdown-submenu">
+                    <div class="dropdown-submenu" style="z-index: 1001;">
                       <a href="#" class="dropdown-item">Consulting</a>
                       <a href="#" class="dropdown-item">Development</a>
                       <a href="#" class="dropdown-item">Support</a>
@@ -436,6 +436,19 @@
               </div>
             </div>
           </div>
+          <style>
+            /* Override card overflow for dropdown card specifically */
+            .card[style*="overflow: visible"] {
+              overflow: visible !important;
+            }
+            /* Ensure parent containers don't clip */
+            .grid.grid-3 {
+              overflow: visible;
+            }
+            section {
+              overflow: visible;
+            }
+          </style>
           <div class="card">
             <h3>Tooltips</h3>
             <p>Contextual help text that appears on hover</p>

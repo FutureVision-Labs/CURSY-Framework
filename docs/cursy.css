@@ -378,6 +378,7 @@ nav a:hover::after {
 .grid {
   display: grid;
   gap: var(--spacing-lg);
+  overflow: visible;
 }
 
 .grid-3 {
