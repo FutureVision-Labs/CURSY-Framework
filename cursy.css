@@ -728,16 +728,22 @@ footer h4 {
   margin-bottom: var(--spacing-md);
 }
 
-footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+footer ul,
+footer .footer-inner ul,
+footer .grid ul,
+footer .grid .footer-inner ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-footer ul li {
-  margin-bottom: 0.5rem;
-  padding-left: 0;
-  list-style: none;
+footer ul li,
+footer .footer-inner ul li,
+footer .grid ul li,
+footer .grid .footer-inner ul li {
+  margin-bottom: 0.5rem !important;
+  padding-left: 0 !important;
+  list-style: none !important;
 }
 
 footer .grid {
