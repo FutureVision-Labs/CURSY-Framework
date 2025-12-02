@@ -800,13 +800,23 @@ footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):focus {
 /* OVERRIDE GLOBAL LINK STYLES FOR FOOTER - MUST BE LAST (but exclude buttons) */
 footer a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary),
 footer a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):link,
-footer a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):visited {
+footer a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):visited,
+footer ul a,
+footer ul li a,
+footer .footer-inner a,
+footer .footer-inner ul a,
+footer .footer-inner ul li a {
   color: var(--cursy-slate-400);
   text-decoration: none;
 }
 
 footer a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):hover,
-footer a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):focus {
+footer a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):focus,
+footer ul a:hover,
+footer ul li a:hover,
+footer .footer-inner a:hover,
+footer .footer-inner ul a:hover,
+footer .footer-inner ul li a:hover {
   color: var(--cursy-cyan);
 }
 
