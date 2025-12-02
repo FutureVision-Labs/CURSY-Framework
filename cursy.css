@@ -797,6 +797,22 @@ footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):focus {
   outline-offset: 2px;
 }
 
+/* OVERRIDE GLOBAL LINK STYLES FOR FOOTER - MUST BE LAST */
+footer a,
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active,
+footer a:focus {
+  color: var(--cursy-slate-400);
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+  color: var(--cursy-cyan);
+}
+
 /* Footer general text styling */
 footer p {
   color: var(--cursy-slate-500);
