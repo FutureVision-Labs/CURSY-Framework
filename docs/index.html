@@ -396,17 +396,43 @@
               }
             </style>
           </div>
-          <div class="card">
+          <div class="card" style="min-height: 280px; overflow: visible;">
             <h3>Dropdowns</h3>
-            <p>Animated dropdown menus with smooth transitions</p>
-            <div class="dropdown" style="margin-top: 1rem;">
-              <button class="dropdown-trigger" onclick="event.preventDefault(); event.stopPropagation(); this.closest('.dropdown').classList.toggle('active')">Select Option</button>
-              <div class="dropdown-menu">
-                <a href="#" class="dropdown-item">Option 1</a>
-                <a href="#" class="dropdown-item">Option 2</a>
-                <a href="#" class="dropdown-item">Option 3</a>
-                <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item">More Options</a>
+            <p>Animated dropdown menus with smooth transitions and multilevel support</p>
+            <div style="margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+              <div class="dropdown">
+                <button class="dropdown-trigger" onclick="event.preventDefault(); event.stopPropagation(); this.closest('.dropdown').classList.toggle('active')">Select Option</button>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Option 1</a>
+                  <a href="#" class="dropdown-item">Option 2</a>
+                  <a href="#" class="dropdown-item">Option 3</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">More Options</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropdown-trigger" onclick="event.preventDefault(); event.stopPropagation(); this.closest('.dropdown').classList.toggle('active')">Multilevel Menu</button>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Simple Item</a>
+                  <div class="dropdown-item has-submenu">
+                    Products
+                    <div class="dropdown-submenu">
+                      <a href="#" class="dropdown-item">Web Apps</a>
+                      <a href="#" class="dropdown-item">Mobile Apps</a>
+                      <a href="#" class="dropdown-item">Desktop Apps</a>
+                    </div>
+                  </div>
+                  <div class="dropdown-item has-submenu">
+                    Services
+                    <div class="dropdown-submenu">
+                      <a href="#" class="dropdown-item">Consulting</a>
+                      <a href="#" class="dropdown-item">Development</a>
+                      <a href="#" class="dropdown-item">Support</a>
+                    </div>
+                  </div>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">About</a>
+                </div>
               </div>
             </div>
           </div>

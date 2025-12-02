@@ -250,6 +250,57 @@
   margin: 0.5rem 0;
 }
 
+/* Multilevel Dropdowns */
+.dropdown-item.has-submenu {
+  position: relative;
+}
+
+.dropdown-item.has-submenu::after {
+  content: '▶';
+  position: absolute;
+  right: 1rem;
+  font-size: 0.7rem;
+  color: var(--cursy-slate-500);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item.has-submenu:hover::after {
+  color: var(--cursy-cyan);
+  transform: translateX(2px);
+}
+
+.dropdown-submenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  margin-left: 0.5rem;
+  background: radial-gradient(circle at top, rgba(15, 23, 42, 0.98), rgba(2, 6, 23, 0.98));
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+  min-width: 180px;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.95), 0 0 20px rgba(34, 211, 238, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-10px) scale(0.95);
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+              transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+              pointer-events 0.3s ease;
+  z-index: 60;
+  overflow: hidden;
+}
+
+.dropdown-item.has-submenu:hover .dropdown-submenu {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateX(0) scale(1);
+}
+
+.dropdown-submenu .dropdown-item {
+  font-size: 0.85rem;
+  padding: 0.6rem 0.9rem;
+}
+
 /* ============================================
    TOOLTIPS
    ============================================ */
