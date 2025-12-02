@@ -320,9 +320,44 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
           </div>
           <div class="card">
-            <h3>Loading Spinner</h3>
-            <div style="display: flex; justify-content: center; padding: 3rem;">
-              <div class="spinner"></div>
+            <h3>Loading Spinners</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; padding: 2rem;">
+              <div style="text-align: center;">
+                <div class="spinner" style="margin: 0 auto 0.5rem;"></div>
+                <p style="font-size: 0.75rem; color: var(--cursy-slate-400);">Default</p>
+              </div>
+              <div style="text-align: center;">
+                <div class="spinner spinner-sm" style="margin: 0 auto 0.5rem;"></div>
+                <p style="font-size: 0.75rem; color: var(--cursy-slate-400);">Small</p>
+              </div>
+              <div style="text-align: center;">
+                <div class="spinner spinner-lg" style="margin: 0 auto 0.5rem;"></div>
+                <p style="font-size: 0.75rem; color: var(--cursy-slate-400);">Large</p>
+              </div>
+              <div style="text-align: center;">
+                <div class="spinner spinner-green" style="margin: 0 auto 0.5rem;"></div>
+                <p style="font-size: 0.75rem; color: var(--cursy-slate-400);">Green</p>
+              </div>
+              <div style="text-align: center;">
+                <div class="spinner spinner-purple" style="margin: 0 auto 0.5rem;"></div>
+                <p style="font-size: 0.75rem; color: var(--cursy-slate-400);">Purple</p>
+              </div>
+              <div style="text-align: center;">
+                <div class="spinner spinner-orange" style="margin: 0 auto 0.5rem;"></div>
+                <p style="font-size: 0.75rem; color: var(--cursy-slate-400);">Orange</p>
+              </div>
+              <div style="text-align: center;">
+                <div class="spinner-pulse" style="margin: 0 auto 0.5rem;"></div>
+                <p style="font-size: 0.75rem; color: var(--cursy-slate-400);">Pulse</p>
+              </div>
+              <div style="text-align: center;">
+                <div class="spinner-dots" style="margin: 0 auto 0.5rem;">
+                  <div class="spinner-dot"></div>
+                  <div class="spinner-dot"></div>
+                  <div class="spinner-dot"></div>
+                </div>
+                <p style="font-size: 0.75rem; color: var(--cursy-slate-400);">Dots</p>
+              </div>
             </div>
           </div>
         </div>
