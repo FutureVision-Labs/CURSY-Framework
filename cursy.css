@@ -440,6 +440,10 @@ nav a:hover::after {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 /* ============================================
    HERO SECTIONS
    ============================================ */
