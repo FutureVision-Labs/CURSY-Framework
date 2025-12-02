@@ -26,15 +26,13 @@
 }
 
 /* Override reset for footer lists immediately */
-footer ul,
-footer .footer-inner ul {
+footer ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-footer ul li,
-footer .footer-inner ul li {
+footer ul li {
   margin-bottom: 0.5rem;
   padding-left: 0;
   list-style-type: none;
@@ -743,19 +741,13 @@ footer h4 {
   margin-bottom: var(--spacing-md);
 }
 
-footer ul,
-footer .footer-inner ul,
-footer .grid ul,
-footer .grid .footer-inner ul {
+footer ul {
   list-style-type: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
 
-footer ul li,
-footer .footer-inner ul li,
-footer .grid ul li,
-footer .grid .footer-inner ul li {
+footer ul li {
   margin-bottom: 0.5rem !important;
   padding-left: 0 !important;
   list-style-type: none !important;
@@ -1134,24 +1126,18 @@ footer ul {
   margin: 0 !important;
 }
 
-footer .footer-inner ul li,
 footer ul li {
   margin-bottom: 0.5rem !important;
   padding-left: 0 !important;
   list-style-type: none !important;
 }
 
-footer .footer-inner ul li::before,
-footer .footer-inner ul li::marker,
 footer ul li::before,
 footer ul li::marker {
   display: none !important;
   content: none !important;
 }
 
-footer .footer-inner ul li a,
-footer .footer-inner ul li a:link,
-footer .footer-inner ul li a:visited,
 footer ul li a,
 footer ul li a:link,
 footer ul li a:visited {
@@ -1162,14 +1148,11 @@ footer ul li a:visited {
   display: inline-block !important;
 }
 
-footer .footer-inner ul li a:hover,
 footer ul li a:hover {
   color: var(--cursy-cyan) !important;
   text-decoration: none !important;
 }
 
-footer .footer-inner ul li a:active,
-footer .footer-inner ul li a:focus,
 footer ul li a:active,
 footer ul li a:focus {
   color: var(--cursy-cyan) !important;
