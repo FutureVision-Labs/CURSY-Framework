@@ -14,8 +14,49 @@
   border-bottom: 1px solid rgba(30, 64, 175, 0.7);
   margin-bottom: var(--spacing-lg);
   overflow-x: auto;
+  position: relative;
 }
 
+.tab-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tab-label {
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--cursy-slate-400);
+  font-family: var(--font-orbitron);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.tab-label:hover {
+  color: var(--cursy-slate-200);
+}
+
+.tab-input:checked + .tab-label {
+  color: var(--cursy-cyan);
+  border-bottom-color: var(--cursy-cyan);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-input:checked ~ .tab-content {
+  display: block;
+}
+
+/* Legacy support - keep .tab class working */
 .tab {
   padding: 0.75rem 1.5rem;
   background: transparent;
@@ -33,19 +74,6 @@
 
 .tab:hover {
   color: var(--cursy-slate-200);
-}
-
-.tab.active {
-  color: var(--cursy-cyan);
-  border-bottom-color: var(--cursy-cyan);
-}
-
-.tab-content {
-  display: none;
-}
-
-.tab-content.active {
-  display: block;
 }
 
 /* ============================================
@@ -195,6 +223,30 @@ button.dropdown-trigger {
               pointer-events 0.3s ease;
   z-index: 50;
   overflow: hidden;
+}
+
+/* Pure CSS dropdown - show on hover */
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0) scale(1);
+}
+
+.dropdown:hover .dropdown-trigger::after,
+.dropdown:focus-within .dropdown-trigger::after {
+  transform: rotate(180deg);
+}
+
+/* Legacy support - keep .active class working */
+.dropdown.active .dropdown-menu {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0) scale(1);
+}
+
+.dropdown.active .dropdown-trigger::after {
+  transform: rotate(180deg);
 }
 
 .dropdown-menu::before {
