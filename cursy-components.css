@@ -235,7 +235,8 @@ button.dropdown-trigger {
   position: absolute;
   top: 100%;
   left: 0;
-  margin-top: 0.5rem;
+  margin-top: 0;
+  padding-top: 0.5rem;
   background: radial-gradient(circle at top, rgba(15, 23, 42, 0.98), rgba(2, 6, 23, 0.98));
   border: 1px solid rgba(56, 189, 248, 0.5);
   border-radius: 0.75rem;
@@ -249,7 +250,18 @@ button.dropdown-trigger {
               transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
               pointer-events 0.3s ease;
   z-index: 50;
-  overflow: hidden;
+  overflow: visible;
+}
+
+/* Bridge the gap with invisible padding area */
+.dropdown-menu::after {
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
+  background: transparent;
 }
 
 /* Pure CSS dropdown - show on hover */
