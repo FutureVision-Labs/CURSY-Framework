@@ -767,6 +767,56 @@ footer ul li::marker {
   content: none;
 }
 
+/* Footer link styles - MUST be at the very end to override everything */
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary),
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):link,
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):visited {
+  color: var(--cursy-slate-400);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s ease;
+  display: inline-block;
+}
+
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):hover {
+  color: var(--cursy-cyan);
+  text-decoration: none;
+}
+
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):active,
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):focus {
+  color: var(--cursy-cyan);
+  text-decoration: none;
+  outline: 1px solid var(--cursy-cyan);
+  outline-offset: 2px;
+}
+
+/* Footer general text styling */
+footer p {
+  color: var(--cursy-slate-500);
+  font-size: 0.8rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+footer h3 {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: var(--cursy-slate-300);
+  font-weight: 600;
+}
+
+footer a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary) {
+  color: var(--cursy-slate-400);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):hover {
+  color: var(--cursy-cyan);
+  text-decoration: underline;
+}
+
 /* Footer responsive - keep 3 columns on larger screens */
 @media (max-width: 900px) {
   footer .grid.grid-3 {
