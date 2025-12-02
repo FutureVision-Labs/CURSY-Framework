@@ -87,6 +87,32 @@ document.addEventListener('DOMContentLoaded', function() {
       dropdowns.forEach(d => d.classList.remove('active'));
     }
   });
+  
+  // Tab functionality
+  const tabs = document.querySelectorAll('.tab');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      const tabId = this.getAttribute('data-tab');
+      const tabsContainer = this.closest('.tabs');
+      const card = this.closest('.card');
+      
+      // Remove active class from all tabs in this container
+      tabsContainer.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      // Add active class to clicked tab
+      this.classList.add('active');
+      
+      // Hide all tab contents in this card
+      card.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.remove('active');
+      });
+      
+      // Show the selected tab content
+      const tabContent = card.querySelector('#' + tabId);
+      if (tabContent) {
+        tabContent.classList.add('active');
+      }
+    });
+  });
 });
 </script>
     
@@ -235,13 +261,19 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="card">
             <h3>Tabs</h3>
             <div class="tabs">
-              <button class="tab active">Tab 1</button>
-              <button class="tab">Tab 2</button>
-              <button class="tab">Tab 3</button>
+              <button class="tab active" data-tab="tab1">Tab 1</button>
+              <button class="tab" data-tab="tab2">Tab 2</button>
+              <button class="tab" data-tab="tab3">Tab 3</button>
             </div>
-            <p style="margin-top: 1rem; font-size: 0.8rem; color: var(--cursy-slate-400);">
-              Click tabs to switch content
-            </p>
+            <div class="tab-content active" id="tab1">
+              <p style="margin-top: 1rem; color: var(--cursy-slate-300);">This is the content for Tab 1. Switch tabs to see different content!</p>
+            </div>
+            <div class="tab-content" id="tab2">
+              <p style="margin-top: 1rem; color: var(--cursy-slate-300);">This is the content for Tab 2. Pretty neat, right?</p>
+            </div>
+            <div class="tab-content" id="tab3">
+              <p style="margin-top: 1rem; color: var(--cursy-slate-300);">This is the content for Tab 3. The tabs are fully functional!</p>
+            </div>
           </div>
           <div class="card">
             <h3>Breadcrumbs</h3>
