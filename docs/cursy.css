@@ -295,7 +295,7 @@ nav a:hover::after {
   background: radial-gradient(circle at 0 0, var(--cursy-green), transparent 50%),
     radial-gradient(circle at 100% 0, var(--cursy-cyan), transparent 50%),
     linear-gradient(135deg, var(--cursy-green), var(--cursy-cyan));
-  color: var(--cursy-slate-900) !important;
+  color: var(--cursy-slate-900);
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -305,6 +305,16 @@ nav a:hover::after {
   position: relative;
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Ensure buttons override any link styles */
+a.btn-primary,
+.card a.btn-primary,
+section a.btn-primary,
+main a.btn-primary,
+footer a.btn-primary {
+  color: var(--cursy-slate-900);
+  text-decoration: none;
 }
 
 .btn-primary button {
@@ -358,6 +368,21 @@ nav a:hover::after {
 .btn-ghost:hover {
   border-color: var(--cursy-cyan);
   color: #a5f3fc;
+}
+
+/* Ensure ghost buttons override any link styles */
+a.btn-ghost,
+.card a.btn-ghost,
+section a.btn-ghost,
+main a.btn-ghost,
+footer a.btn-ghost {
+  color: var(--cursy-slate-200);
+  text-decoration: none;
+}
+
+a.btn-ghost:hover {
+  color: #a5f3fc;
+  text-decoration: none;
 }
 
 /* ============================================
