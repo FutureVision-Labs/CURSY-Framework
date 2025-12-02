@@ -738,10 +738,11 @@ footer ul li {
   margin-bottom: 0.5rem;
 }
 
-/* Footer link styles - MUST come after button styles to ensure proper styling */
+/* Footer link styles - MUST come after button styles and have HIGHER specificity */
 footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary),
 footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):link,
-footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):visited {
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):visited,
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):not(.btn-primary):not(.btn-ghost):not(.btn-secondary) {
   color: var(--cursy-slate-400);
   text-decoration: none;
   font-size: 0.85rem;
@@ -749,13 +750,16 @@ footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):visited {
   display: inline-block;
 }
 
-footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):hover {
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):hover,
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):not(.btn-primary):not(.btn-ghost):not(.btn-secondary):hover {
   color: var(--cursy-cyan);
   text-decoration: none;
 }
 
 footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):active,
-footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):focus {
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):focus,
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):not(.btn-primary):not(.btn-ghost):not(.btn-secondary):active,
+footer ul li a:not(.btn-primary):not(.btn-ghost):not(.btn-secondary):not(.btn-primary):not(.btn-ghost):not(.btn-secondary):focus {
   color: var(--cursy-cyan);
   text-decoration: none;
   outline: 1px solid var(--cursy-cyan);
